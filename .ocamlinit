@@ -1,0 +1,17 @@
+#use "topfind";;
+#require "menhirLib";;
+#directory "_build";;
+#load "lexico.cmo";;
+#load "pre_processador.cmo";;
+#load "ast.cmo";;
+#load "sast.cmo";;
+#load "tast.cmo";;
+#load "tabsimb.cmo";;
+#load "ambiente.cmo";;
+#load "semantico.cmo";;
+#load "sintatico.cmo";;
+#load "semanticoTest.cmo";;
+
+open Ast
+open Ambiente
+open SemanticoTest

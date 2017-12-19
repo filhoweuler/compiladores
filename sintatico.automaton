@@ -1,0 +1,2964 @@
+State 0:
+programa' -> . programa [ # ]
+-- On WHILE shift to state 1
+-- On RETURN shift to state 53
+-- On PRINT shift to state 57
+-- On INPUTS shift to state 60
+-- On INPUTI shift to state 63
+-- On INPUTF shift to state 66
+-- On INPUTC shift to state 69
+-- On IF shift to state 72
+-- On ID shift to state 77
+-- On FOR shift to state 96
+-- On DEF shift to state 151
+-- On programa shift to state 176
+-- On list(instrucao) shift to state 177
+-- On instrucao shift to state 179
+-- On funcao shift to state 181
+-- On comando_while shift to state 111
+-- On comando_se shift to state 112
+-- On comando_retorno shift to state 113
+-- On comando_print shift to state 114
+-- On comando_inputs shift to state 115
+-- On comando_inputi shift to state 116
+-- On comando_inputf shift to state 117
+-- On comando_inputc shift to state 118
+-- On comando_for shift to state 119
+-- On comando_chamada shift to state 120
+-- On comando_atribuicao_sub shift to state 121
+-- On comando_atribuicao_mul shift to state 122
+-- On comando_atribuicao_mod shift to state 123
+-- On comando_atribuicao_mais shift to state 124
+-- On comando_atribuicao_div shift to state 125
+-- On comando_atribuicao shift to state 126
+-- On comando shift to state 182
+-- On chamada shift to state 129
+-- On EOF reduce production list(instrucao) -> 
+
+State 1:
+comando_while -> WHILE . expressao DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 49
+-- On chamada shift to state 17
+
+State 2:
+expressao -> NAO . expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 48
+-- On chamada shift to state 17
+
+State 3:
+expressao -> MENOS . expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 47
+-- On chamada shift to state 17
+
+State 4:
+expressao -> LITSTRING . [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On VIRG reduce production expressao -> LITSTRING 
+-- On OULOG reduce production expressao -> LITSTRING 
+-- On NOVALINHA reduce production expressao -> LITSTRING 
+-- On MUL reduce production expressao -> LITSTRING 
+-- On MOD reduce production expressao -> LITSTRING 
+-- On MENOS reduce production expressao -> LITSTRING 
+-- On MENORIGUAL reduce production expressao -> LITSTRING 
+-- On MENOR reduce production expressao -> LITSTRING 
+-- On MAIS reduce production expressao -> LITSTRING 
+-- On MAIORIGUAL reduce production expressao -> LITSTRING 
+-- On MAIOR reduce production expressao -> LITSTRING 
+-- On IGUAL reduce production expressao -> LITSTRING 
+-- On FPAR reduce production expressao -> LITSTRING 
+-- On ELOG reduce production expressao -> LITSTRING 
+-- On DPTOS reduce production expressao -> LITSTRING 
+-- On DIV reduce production expressao -> LITSTRING 
+-- On DIFERENTE reduce production expressao -> LITSTRING 
+
+State 5:
+expressao -> LITINT . [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On VIRG reduce production expressao -> LITINT 
+-- On OULOG reduce production expressao -> LITINT 
+-- On NOVALINHA reduce production expressao -> LITINT 
+-- On MUL reduce production expressao -> LITINT 
+-- On MOD reduce production expressao -> LITINT 
+-- On MENOS reduce production expressao -> LITINT 
+-- On MENORIGUAL reduce production expressao -> LITINT 
+-- On MENOR reduce production expressao -> LITINT 
+-- On MAIS reduce production expressao -> LITINT 
+-- On MAIORIGUAL reduce production expressao -> LITINT 
+-- On MAIOR reduce production expressao -> LITINT 
+-- On IGUAL reduce production expressao -> LITINT 
+-- On FPAR reduce production expressao -> LITINT 
+-- On ELOG reduce production expressao -> LITINT 
+-- On DPTOS reduce production expressao -> LITINT 
+-- On DIV reduce production expressao -> LITINT 
+-- On DIFERENTE reduce production expressao -> LITINT 
+
+State 6:
+expressao -> LITFLOAT . [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On VIRG reduce production expressao -> LITFLOAT 
+-- On OULOG reduce production expressao -> LITFLOAT 
+-- On NOVALINHA reduce production expressao -> LITFLOAT 
+-- On MUL reduce production expressao -> LITFLOAT 
+-- On MOD reduce production expressao -> LITFLOAT 
+-- On MENOS reduce production expressao -> LITFLOAT 
+-- On MENORIGUAL reduce production expressao -> LITFLOAT 
+-- On MENOR reduce production expressao -> LITFLOAT 
+-- On MAIS reduce production expressao -> LITFLOAT 
+-- On MAIORIGUAL reduce production expressao -> LITFLOAT 
+-- On MAIOR reduce production expressao -> LITFLOAT 
+-- On IGUAL reduce production expressao -> LITFLOAT 
+-- On FPAR reduce production expressao -> LITFLOAT 
+-- On ELOG reduce production expressao -> LITFLOAT 
+-- On DPTOS reduce production expressao -> LITFLOAT 
+-- On DIV reduce production expressao -> LITFLOAT 
+-- On DIFERENTE reduce production expressao -> LITFLOAT 
+
+State 7:
+expressao -> LITCHAR . [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On VIRG reduce production expressao -> LITCHAR 
+-- On OULOG reduce production expressao -> LITCHAR 
+-- On NOVALINHA reduce production expressao -> LITCHAR 
+-- On MUL reduce production expressao -> LITCHAR 
+-- On MOD reduce production expressao -> LITCHAR 
+-- On MENOS reduce production expressao -> LITCHAR 
+-- On MENORIGUAL reduce production expressao -> LITCHAR 
+-- On MENOR reduce production expressao -> LITCHAR 
+-- On MAIS reduce production expressao -> LITCHAR 
+-- On MAIORIGUAL reduce production expressao -> LITCHAR 
+-- On MAIOR reduce production expressao -> LITCHAR 
+-- On IGUAL reduce production expressao -> LITCHAR 
+-- On FPAR reduce production expressao -> LITCHAR 
+-- On ELOG reduce production expressao -> LITCHAR 
+-- On DPTOS reduce production expressao -> LITCHAR 
+-- On DIV reduce production expressao -> LITCHAR 
+-- On DIFERENTE reduce production expressao -> LITCHAR 
+
+State 8:
+expressao -> LITBOOL . [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On VIRG reduce production expressao -> LITBOOL 
+-- On OULOG reduce production expressao -> LITBOOL 
+-- On NOVALINHA reduce production expressao -> LITBOOL 
+-- On MUL reduce production expressao -> LITBOOL 
+-- On MOD reduce production expressao -> LITBOOL 
+-- On MENOS reduce production expressao -> LITBOOL 
+-- On MENORIGUAL reduce production expressao -> LITBOOL 
+-- On MENOR reduce production expressao -> LITBOOL 
+-- On MAIS reduce production expressao -> LITBOOL 
+-- On MAIORIGUAL reduce production expressao -> LITBOOL 
+-- On MAIOR reduce production expressao -> LITBOOL 
+-- On IGUAL reduce production expressao -> LITBOOL 
+-- On FPAR reduce production expressao -> LITBOOL 
+-- On ELOG reduce production expressao -> LITBOOL 
+-- On DPTOS reduce production expressao -> LITBOOL 
+-- On DIV reduce production expressao -> LITBOOL 
+-- On DIFERENTE reduce production expressao -> LITBOOL 
+
+State 9:
+chamada -> ID . APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> ID . [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On APAR shift to state 10
+-- On VIRG reduce production expressao -> ID 
+-- On OULOG reduce production expressao -> ID 
+-- On NOVALINHA reduce production expressao -> ID 
+-- On MUL reduce production expressao -> ID 
+-- On MOD reduce production expressao -> ID 
+-- On MENOS reduce production expressao -> ID 
+-- On MENORIGUAL reduce production expressao -> ID 
+-- On MENOR reduce production expressao -> ID 
+-- On MAIS reduce production expressao -> ID 
+-- On MAIORIGUAL reduce production expressao -> ID 
+-- On MAIOR reduce production expressao -> ID 
+-- On IGUAL reduce production expressao -> ID 
+-- On FPAR reduce production expressao -> ID 
+-- On ELOG reduce production expressao -> ID 
+-- On DPTOS reduce production expressao -> ID 
+-- On DIV reduce production expressao -> ID 
+-- On DIFERENTE reduce production expressao -> ID 
+
+State 10:
+chamada -> ID APAR . loption(separated_nonempty_list(VIRG,expressao)) FPAR [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On separated_nonempty_list(VIRG,expressao) shift to state 41
+-- On loption(separated_nonempty_list(VIRG,expressao)) shift to state 42
+-- On expressao shift to state 44
+-- On chamada shift to state 17
+-- On FPAR reduce production loption(separated_nonempty_list(VIRG,expressao)) -> 
+
+State 11:
+expressao -> APAR . expressao FPAR [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 12
+-- On chamada shift to state 17
+
+State 12:
+expressao -> expressao . ELOG expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> APAR expressao . FPAR [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On OULOG shift to state 13
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MENORIGUAL shift to state 24
+-- On MENOR shift to state 28
+-- On MAIS shift to state 26
+-- On MAIORIGUAL shift to state 30
+-- On MAIOR shift to state 32
+-- On IGUAL shift to state 34
+-- On FPAR shift to state 40
+-- On ELOG shift to state 36
+-- On DIV shift to state 22
+-- On DIFERENTE shift to state 38
+
+State 13:
+expressao -> expressao OULOG . expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 14
+-- On chamada shift to state 17
+
+State 14:
+expressao -> expressao . ELOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao OULOG expressao . [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MENORIGUAL shift to state 24
+-- On MENOR shift to state 28
+-- On MAIS shift to state 26
+-- On MAIORIGUAL shift to state 30
+-- On MAIOR shift to state 32
+-- On IGUAL shift to state 34
+-- On ELOG shift to state 36
+-- On DIV shift to state 22
+-- On DIFERENTE shift to state 38
+-- On VIRG reduce production expressao -> expressao OULOG expressao 
+-- On OULOG reduce production expressao -> expressao OULOG expressao 
+-- On NOVALINHA reduce production expressao -> expressao OULOG expressao 
+-- On FPAR reduce production expressao -> expressao OULOG expressao 
+-- On DPTOS reduce production expressao -> expressao OULOG expressao 
+
+State 15:
+expressao -> expressao MUL . expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 16
+-- On chamada shift to state 17
+
+State 16:
+expressao -> expressao . ELOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao MUL expressao . [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On VIRG reduce production expressao -> expressao MUL expressao 
+-- On OULOG reduce production expressao -> expressao MUL expressao 
+-- On NOVALINHA reduce production expressao -> expressao MUL expressao 
+-- On MUL reduce production expressao -> expressao MUL expressao 
+-- On MOD reduce production expressao -> expressao MUL expressao 
+-- On MENOS reduce production expressao -> expressao MUL expressao 
+-- On MENORIGUAL reduce production expressao -> expressao MUL expressao 
+-- On MENOR reduce production expressao -> expressao MUL expressao 
+-- On MAIS reduce production expressao -> expressao MUL expressao 
+-- On MAIORIGUAL reduce production expressao -> expressao MUL expressao 
+-- On MAIOR reduce production expressao -> expressao MUL expressao 
+-- On IGUAL reduce production expressao -> expressao MUL expressao 
+-- On FPAR reduce production expressao -> expressao MUL expressao 
+-- On ELOG reduce production expressao -> expressao MUL expressao 
+-- On DPTOS reduce production expressao -> expressao MUL expressao 
+-- On DIV reduce production expressao -> expressao MUL expressao 
+-- On DIFERENTE reduce production expressao -> expressao MUL expressao 
+
+State 17:
+expressao -> chamada . [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On VIRG reduce production expressao -> chamada 
+-- On OULOG reduce production expressao -> chamada 
+-- On NOVALINHA reduce production expressao -> chamada 
+-- On MUL reduce production expressao -> chamada 
+-- On MOD reduce production expressao -> chamada 
+-- On MENOS reduce production expressao -> chamada 
+-- On MENORIGUAL reduce production expressao -> chamada 
+-- On MENOR reduce production expressao -> chamada 
+-- On MAIS reduce production expressao -> chamada 
+-- On MAIORIGUAL reduce production expressao -> chamada 
+-- On MAIOR reduce production expressao -> chamada 
+-- On IGUAL reduce production expressao -> chamada 
+-- On FPAR reduce production expressao -> chamada 
+-- On ELOG reduce production expressao -> chamada 
+-- On DPTOS reduce production expressao -> chamada 
+-- On DIV reduce production expressao -> chamada 
+-- On DIFERENTE reduce production expressao -> chamada 
+
+State 18:
+expressao -> expressao MOD . expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 19
+-- On chamada shift to state 17
+
+State 19:
+expressao -> expressao . ELOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao MOD expressao . [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On VIRG reduce production expressao -> expressao MOD expressao 
+-- On OULOG reduce production expressao -> expressao MOD expressao 
+-- On NOVALINHA reduce production expressao -> expressao MOD expressao 
+-- On MUL reduce production expressao -> expressao MOD expressao 
+-- On MOD reduce production expressao -> expressao MOD expressao 
+-- On MENOS reduce production expressao -> expressao MOD expressao 
+-- On MENORIGUAL reduce production expressao -> expressao MOD expressao 
+-- On MENOR reduce production expressao -> expressao MOD expressao 
+-- On MAIS reduce production expressao -> expressao MOD expressao 
+-- On MAIORIGUAL reduce production expressao -> expressao MOD expressao 
+-- On MAIOR reduce production expressao -> expressao MOD expressao 
+-- On IGUAL reduce production expressao -> expressao MOD expressao 
+-- On FPAR reduce production expressao -> expressao MOD expressao 
+-- On ELOG reduce production expressao -> expressao MOD expressao 
+-- On DPTOS reduce production expressao -> expressao MOD expressao 
+-- On DIV reduce production expressao -> expressao MOD expressao 
+-- On DIFERENTE reduce production expressao -> expressao MOD expressao 
+
+State 20:
+expressao -> expressao MENOS . expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 21
+-- On chamada shift to state 17
+
+State 21:
+expressao -> expressao . ELOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao MENOS expressao . [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On DIV shift to state 22
+-- On VIRG reduce production expressao -> expressao MENOS expressao 
+-- On OULOG reduce production expressao -> expressao MENOS expressao 
+-- On NOVALINHA reduce production expressao -> expressao MENOS expressao 
+-- On MENOS reduce production expressao -> expressao MENOS expressao 
+-- On MENORIGUAL reduce production expressao -> expressao MENOS expressao 
+-- On MENOR reduce production expressao -> expressao MENOS expressao 
+-- On MAIS reduce production expressao -> expressao MENOS expressao 
+-- On MAIORIGUAL reduce production expressao -> expressao MENOS expressao 
+-- On MAIOR reduce production expressao -> expressao MENOS expressao 
+-- On IGUAL reduce production expressao -> expressao MENOS expressao 
+-- On FPAR reduce production expressao -> expressao MENOS expressao 
+-- On ELOG reduce production expressao -> expressao MENOS expressao 
+-- On DPTOS reduce production expressao -> expressao MENOS expressao 
+-- On DIFERENTE reduce production expressao -> expressao MENOS expressao 
+
+State 22:
+expressao -> expressao DIV . expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 23
+-- On chamada shift to state 17
+
+State 23:
+expressao -> expressao . ELOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao DIV expressao . [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On VIRG reduce production expressao -> expressao DIV expressao 
+-- On OULOG reduce production expressao -> expressao DIV expressao 
+-- On NOVALINHA reduce production expressao -> expressao DIV expressao 
+-- On MUL reduce production expressao -> expressao DIV expressao 
+-- On MOD reduce production expressao -> expressao DIV expressao 
+-- On MENOS reduce production expressao -> expressao DIV expressao 
+-- On MENORIGUAL reduce production expressao -> expressao DIV expressao 
+-- On MENOR reduce production expressao -> expressao DIV expressao 
+-- On MAIS reduce production expressao -> expressao DIV expressao 
+-- On MAIORIGUAL reduce production expressao -> expressao DIV expressao 
+-- On MAIOR reduce production expressao -> expressao DIV expressao 
+-- On IGUAL reduce production expressao -> expressao DIV expressao 
+-- On FPAR reduce production expressao -> expressao DIV expressao 
+-- On ELOG reduce production expressao -> expressao DIV expressao 
+-- On DPTOS reduce production expressao -> expressao DIV expressao 
+-- On DIV reduce production expressao -> expressao DIV expressao 
+-- On DIFERENTE reduce production expressao -> expressao DIV expressao 
+
+State 24:
+expressao -> expressao MENORIGUAL . expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 25
+-- On chamada shift to state 17
+
+State 25:
+expressao -> expressao . ELOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao MENORIGUAL expressao . [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MAIS shift to state 26
+-- On DIV shift to state 22
+-- On VIRG reduce production expressao -> expressao MENORIGUAL expressao 
+-- On OULOG reduce production expressao -> expressao MENORIGUAL expressao 
+-- On NOVALINHA reduce production expressao -> expressao MENORIGUAL expressao 
+-- On MENORIGUAL reduce production expressao -> expressao MENORIGUAL expressao 
+-- On MENOR reduce production expressao -> expressao MENORIGUAL expressao 
+-- On MAIORIGUAL reduce production expressao -> expressao MENORIGUAL expressao 
+-- On MAIOR reduce production expressao -> expressao MENORIGUAL expressao 
+-- On IGUAL reduce production expressao -> expressao MENORIGUAL expressao 
+-- On FPAR reduce production expressao -> expressao MENORIGUAL expressao 
+-- On ELOG reduce production expressao -> expressao MENORIGUAL expressao 
+-- On DPTOS reduce production expressao -> expressao MENORIGUAL expressao 
+-- On DIFERENTE reduce production expressao -> expressao MENORIGUAL expressao 
+
+State 26:
+expressao -> expressao MAIS . expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 27
+-- On chamada shift to state 17
+
+State 27:
+expressao -> expressao . ELOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao MAIS expressao . [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On DIV shift to state 22
+-- On VIRG reduce production expressao -> expressao MAIS expressao 
+-- On OULOG reduce production expressao -> expressao MAIS expressao 
+-- On NOVALINHA reduce production expressao -> expressao MAIS expressao 
+-- On MENOS reduce production expressao -> expressao MAIS expressao 
+-- On MENORIGUAL reduce production expressao -> expressao MAIS expressao 
+-- On MENOR reduce production expressao -> expressao MAIS expressao 
+-- On MAIS reduce production expressao -> expressao MAIS expressao 
+-- On MAIORIGUAL reduce production expressao -> expressao MAIS expressao 
+-- On MAIOR reduce production expressao -> expressao MAIS expressao 
+-- On IGUAL reduce production expressao -> expressao MAIS expressao 
+-- On FPAR reduce production expressao -> expressao MAIS expressao 
+-- On ELOG reduce production expressao -> expressao MAIS expressao 
+-- On DPTOS reduce production expressao -> expressao MAIS expressao 
+-- On DIFERENTE reduce production expressao -> expressao MAIS expressao 
+
+State 28:
+expressao -> expressao MENOR . expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 29
+-- On chamada shift to state 17
+
+State 29:
+expressao -> expressao . ELOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao MENOR expressao . [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MAIS shift to state 26
+-- On DIV shift to state 22
+-- On VIRG reduce production expressao -> expressao MENOR expressao 
+-- On OULOG reduce production expressao -> expressao MENOR expressao 
+-- On NOVALINHA reduce production expressao -> expressao MENOR expressao 
+-- On MENORIGUAL reduce production expressao -> expressao MENOR expressao 
+-- On MENOR reduce production expressao -> expressao MENOR expressao 
+-- On MAIORIGUAL reduce production expressao -> expressao MENOR expressao 
+-- On MAIOR reduce production expressao -> expressao MENOR expressao 
+-- On IGUAL reduce production expressao -> expressao MENOR expressao 
+-- On FPAR reduce production expressao -> expressao MENOR expressao 
+-- On ELOG reduce production expressao -> expressao MENOR expressao 
+-- On DPTOS reduce production expressao -> expressao MENOR expressao 
+-- On DIFERENTE reduce production expressao -> expressao MENOR expressao 
+
+State 30:
+expressao -> expressao MAIORIGUAL . expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 31
+-- On chamada shift to state 17
+
+State 31:
+expressao -> expressao . ELOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao MAIORIGUAL expressao . [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MAIS shift to state 26
+-- On DIV shift to state 22
+-- On VIRG reduce production expressao -> expressao MAIORIGUAL expressao 
+-- On OULOG reduce production expressao -> expressao MAIORIGUAL expressao 
+-- On NOVALINHA reduce production expressao -> expressao MAIORIGUAL expressao 
+-- On MENORIGUAL reduce production expressao -> expressao MAIORIGUAL expressao 
+-- On MENOR reduce production expressao -> expressao MAIORIGUAL expressao 
+-- On MAIORIGUAL reduce production expressao -> expressao MAIORIGUAL expressao 
+-- On MAIOR reduce production expressao -> expressao MAIORIGUAL expressao 
+-- On IGUAL reduce production expressao -> expressao MAIORIGUAL expressao 
+-- On FPAR reduce production expressao -> expressao MAIORIGUAL expressao 
+-- On ELOG reduce production expressao -> expressao MAIORIGUAL expressao 
+-- On DPTOS reduce production expressao -> expressao MAIORIGUAL expressao 
+-- On DIFERENTE reduce production expressao -> expressao MAIORIGUAL expressao 
+
+State 32:
+expressao -> expressao MAIOR . expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 33
+-- On chamada shift to state 17
+
+State 33:
+expressao -> expressao . ELOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao MAIOR expressao . [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MAIS shift to state 26
+-- On DIV shift to state 22
+-- On VIRG reduce production expressao -> expressao MAIOR expressao 
+-- On OULOG reduce production expressao -> expressao MAIOR expressao 
+-- On NOVALINHA reduce production expressao -> expressao MAIOR expressao 
+-- On MENORIGUAL reduce production expressao -> expressao MAIOR expressao 
+-- On MENOR reduce production expressao -> expressao MAIOR expressao 
+-- On MAIORIGUAL reduce production expressao -> expressao MAIOR expressao 
+-- On MAIOR reduce production expressao -> expressao MAIOR expressao 
+-- On IGUAL reduce production expressao -> expressao MAIOR expressao 
+-- On FPAR reduce production expressao -> expressao MAIOR expressao 
+-- On ELOG reduce production expressao -> expressao MAIOR expressao 
+-- On DPTOS reduce production expressao -> expressao MAIOR expressao 
+-- On DIFERENTE reduce production expressao -> expressao MAIOR expressao 
+
+State 34:
+expressao -> expressao IGUAL . expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 35
+-- On chamada shift to state 17
+
+State 35:
+expressao -> expressao . ELOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao IGUAL expressao . [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MENORIGUAL shift to state 24
+-- On MENOR shift to state 28
+-- On MAIS shift to state 26
+-- On MAIORIGUAL shift to state 30
+-- On MAIOR shift to state 32
+-- On DIV shift to state 22
+-- On VIRG reduce production expressao -> expressao IGUAL expressao 
+-- On OULOG reduce production expressao -> expressao IGUAL expressao 
+-- On NOVALINHA reduce production expressao -> expressao IGUAL expressao 
+-- On IGUAL reduce production expressao -> expressao IGUAL expressao 
+-- On FPAR reduce production expressao -> expressao IGUAL expressao 
+-- On ELOG reduce production expressao -> expressao IGUAL expressao 
+-- On DPTOS reduce production expressao -> expressao IGUAL expressao 
+-- On DIFERENTE reduce production expressao -> expressao IGUAL expressao 
+
+State 36:
+expressao -> expressao ELOG . expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 37
+-- On chamada shift to state 17
+
+State 37:
+expressao -> expressao . ELOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao ELOG expressao . [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MENORIGUAL shift to state 24
+-- On MENOR shift to state 28
+-- On MAIS shift to state 26
+-- On MAIORIGUAL shift to state 30
+-- On MAIOR shift to state 32
+-- On IGUAL shift to state 34
+-- On DIV shift to state 22
+-- On DIFERENTE shift to state 38
+-- On VIRG reduce production expressao -> expressao ELOG expressao 
+-- On OULOG reduce production expressao -> expressao ELOG expressao 
+-- On NOVALINHA reduce production expressao -> expressao ELOG expressao 
+-- On FPAR reduce production expressao -> expressao ELOG expressao 
+-- On ELOG reduce production expressao -> expressao ELOG expressao 
+-- On DPTOS reduce production expressao -> expressao ELOG expressao 
+
+State 38:
+expressao -> expressao DIFERENTE . expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 39
+-- On chamada shift to state 17
+
+State 39:
+expressao -> expressao . ELOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao DIFERENTE expressao . [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MENORIGUAL shift to state 24
+-- On MENOR shift to state 28
+-- On MAIS shift to state 26
+-- On MAIORIGUAL shift to state 30
+-- On MAIOR shift to state 32
+-- On DIV shift to state 22
+-- On VIRG reduce production expressao -> expressao DIFERENTE expressao 
+-- On OULOG reduce production expressao -> expressao DIFERENTE expressao 
+-- On NOVALINHA reduce production expressao -> expressao DIFERENTE expressao 
+-- On IGUAL reduce production expressao -> expressao DIFERENTE expressao 
+-- On FPAR reduce production expressao -> expressao DIFERENTE expressao 
+-- On ELOG reduce production expressao -> expressao DIFERENTE expressao 
+-- On DPTOS reduce production expressao -> expressao DIFERENTE expressao 
+-- On DIFERENTE reduce production expressao -> expressao DIFERENTE expressao 
+
+State 40:
+expressao -> APAR expressao FPAR . [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On VIRG reduce production expressao -> APAR expressao FPAR 
+-- On OULOG reduce production expressao -> APAR expressao FPAR 
+-- On NOVALINHA reduce production expressao -> APAR expressao FPAR 
+-- On MUL reduce production expressao -> APAR expressao FPAR 
+-- On MOD reduce production expressao -> APAR expressao FPAR 
+-- On MENOS reduce production expressao -> APAR expressao FPAR 
+-- On MENORIGUAL reduce production expressao -> APAR expressao FPAR 
+-- On MENOR reduce production expressao -> APAR expressao FPAR 
+-- On MAIS reduce production expressao -> APAR expressao FPAR 
+-- On MAIORIGUAL reduce production expressao -> APAR expressao FPAR 
+-- On MAIOR reduce production expressao -> APAR expressao FPAR 
+-- On IGUAL reduce production expressao -> APAR expressao FPAR 
+-- On FPAR reduce production expressao -> APAR expressao FPAR 
+-- On ELOG reduce production expressao -> APAR expressao FPAR 
+-- On DPTOS reduce production expressao -> APAR expressao FPAR 
+-- On DIV reduce production expressao -> APAR expressao FPAR 
+-- On DIFERENTE reduce production expressao -> APAR expressao FPAR 
+
+State 41:
+loption(separated_nonempty_list(VIRG,expressao)) -> separated_nonempty_list(VIRG,expressao) . [ FPAR ]
+-- On FPAR reduce production loption(separated_nonempty_list(VIRG,expressao)) -> separated_nonempty_list(VIRG,expressao) 
+
+State 42:
+chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) . FPAR [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On FPAR shift to state 43
+
+State 43:
+chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR . [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On VIRG reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On OULOG reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On NOVALINHA reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On MUL reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On MOD reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On MENOS reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On MENORIGUAL reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On MENOR reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On MAIS reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On MAIORIGUAL reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On MAIOR reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On IGUAL reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On FPAR reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On ELOG reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On DPTOS reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On DIV reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+-- On DIFERENTE reduce production chamada -> ID APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR 
+
+State 44:
+expressao -> expressao . ELOG expressao [ VIRG OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ VIRG OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ VIRG OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ VIRG OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ VIRG OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ VIRG OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ VIRG OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ VIRG OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ VIRG OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ VIRG OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ VIRG OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+separated_nonempty_list(VIRG,expressao) -> expressao . [ FPAR ]
+separated_nonempty_list(VIRG,expressao) -> expressao . VIRG separated_nonempty_list(VIRG,expressao) [ FPAR ]
+-- On VIRG shift to state 45
+-- On OULOG shift to state 13
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MENORIGUAL shift to state 24
+-- On MENOR shift to state 28
+-- On MAIS shift to state 26
+-- On MAIORIGUAL shift to state 30
+-- On MAIOR shift to state 32
+-- On IGUAL shift to state 34
+-- On ELOG shift to state 36
+-- On DIV shift to state 22
+-- On DIFERENTE shift to state 38
+-- On FPAR reduce production separated_nonempty_list(VIRG,expressao) -> expressao 
+
+State 45:
+separated_nonempty_list(VIRG,expressao) -> expressao VIRG . separated_nonempty_list(VIRG,expressao) [ FPAR ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On separated_nonempty_list(VIRG,expressao) shift to state 46
+-- On expressao shift to state 44
+-- On chamada shift to state 17
+
+State 46:
+separated_nonempty_list(VIRG,expressao) -> expressao VIRG separated_nonempty_list(VIRG,expressao) . [ FPAR ]
+-- On FPAR reduce production separated_nonempty_list(VIRG,expressao) -> expressao VIRG separated_nonempty_list(VIRG,expressao) 
+
+State 47:
+expressao -> MENOS expressao . [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . ELOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On VIRG reduce production expressao -> MENOS expressao 
+-- On OULOG reduce production expressao -> MENOS expressao 
+-- On NOVALINHA reduce production expressao -> MENOS expressao 
+-- On MUL reduce production expressao -> MENOS expressao 
+-- On MOD reduce production expressao -> MENOS expressao 
+-- On MENOS reduce production expressao -> MENOS expressao 
+-- On MENORIGUAL reduce production expressao -> MENOS expressao 
+-- On MENOR reduce production expressao -> MENOS expressao 
+-- On MAIS reduce production expressao -> MENOS expressao 
+-- On MAIORIGUAL reduce production expressao -> MENOS expressao 
+-- On MAIOR reduce production expressao -> MENOS expressao 
+-- On IGUAL reduce production expressao -> MENOS expressao 
+-- On FPAR reduce production expressao -> MENOS expressao 
+-- On ELOG reduce production expressao -> MENOS expressao 
+-- On DPTOS reduce production expressao -> MENOS expressao 
+-- On DIV reduce production expressao -> MENOS expressao 
+-- On DIFERENTE reduce production expressao -> MENOS expressao 
+
+State 48:
+expressao -> NAO expressao . [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . ELOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DPTOS DIV DIFERENTE ]
+-- On VIRG reduce production expressao -> NAO expressao 
+-- On OULOG reduce production expressao -> NAO expressao 
+-- On NOVALINHA reduce production expressao -> NAO expressao 
+-- On MUL reduce production expressao -> NAO expressao 
+-- On MOD reduce production expressao -> NAO expressao 
+-- On MENOS reduce production expressao -> NAO expressao 
+-- On MENORIGUAL reduce production expressao -> NAO expressao 
+-- On MENOR reduce production expressao -> NAO expressao 
+-- On MAIS reduce production expressao -> NAO expressao 
+-- On MAIORIGUAL reduce production expressao -> NAO expressao 
+-- On MAIOR reduce production expressao -> NAO expressao 
+-- On IGUAL reduce production expressao -> NAO expressao 
+-- On FPAR reduce production expressao -> NAO expressao 
+-- On ELOG reduce production expressao -> NAO expressao 
+-- On DPTOS reduce production expressao -> NAO expressao 
+-- On DIV reduce production expressao -> NAO expressao 
+-- On DIFERENTE reduce production expressao -> NAO expressao 
+
+State 49:
+comando_while -> WHILE expressao . DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+expressao -> expressao . ELOG expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+-- On OULOG shift to state 13
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MENORIGUAL shift to state 24
+-- On MENOR shift to state 28
+-- On MAIS shift to state 26
+-- On MAIORIGUAL shift to state 30
+-- On MAIOR shift to state 32
+-- On IGUAL shift to state 34
+-- On ELOG shift to state 36
+-- On DPTOS shift to state 50
+-- On DIV shift to state 22
+-- On DIFERENTE shift to state 38
+
+State 50:
+comando_while -> WHILE expressao DPTOS . NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On NOVALINHA shift to state 51
+
+State 51:
+comando_while -> WHILE expressao DPTOS NOVALINHA . INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On INDENTA shift to state 52
+
+State 52:
+comando_while -> WHILE expressao DPTOS NOVALINHA INDENTA . comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE shift to state 1
+-- On RETURN shift to state 53
+-- On PRINT shift to state 57
+-- On INPUTS shift to state 60
+-- On INPUTI shift to state 63
+-- On INPUTF shift to state 66
+-- On INPUTC shift to state 69
+-- On IF shift to state 72
+-- On ID shift to state 77
+-- On FOR shift to state 96
+-- On nonempty_list(comando) shift to state 108
+-- On comandos shift to state 149
+-- On comando_while shift to state 111
+-- On comando_se shift to state 112
+-- On comando_retorno shift to state 113
+-- On comando_print shift to state 114
+-- On comando_inputs shift to state 115
+-- On comando_inputi shift to state 116
+-- On comando_inputf shift to state 117
+-- On comando_inputc shift to state 118
+-- On comando_for shift to state 119
+-- On comando_chamada shift to state 120
+-- On comando_atribuicao_sub shift to state 121
+-- On comando_atribuicao_mul shift to state 122
+-- On comando_atribuicao_mod shift to state 123
+-- On comando_atribuicao_mais shift to state 124
+-- On comando_atribuicao_div shift to state 125
+-- On comando_atribuicao shift to state 126
+-- On comando shift to state 127
+-- On chamada shift to state 129
+
+State 53:
+comando_retorno -> RETURN . option(expressao) NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On option(expressao) shift to state 54
+-- On expressao shift to state 56
+-- On chamada shift to state 17
+-- On NOVALINHA reduce production option(expressao) -> 
+
+State 54:
+comando_retorno -> RETURN option(expressao) . NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On NOVALINHA shift to state 55
+
+State 55:
+comando_retorno -> RETURN option(expressao) NOVALINHA . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+-- On RETURN reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+-- On PRINT reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+-- On INPUTS reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+-- On INPUTI reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+-- On INPUTF reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+-- On INPUTC reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+-- On IF reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+-- On ID reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+-- On FOR reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+-- On EOF reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+-- On DEF reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+-- On DEDENTA reduce production comando_retorno -> RETURN option(expressao) NOVALINHA 
+
+State 56:
+expressao -> expressao . ELOG expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+option(expressao) -> expressao . [ NOVALINHA ]
+-- On OULOG shift to state 13
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MENORIGUAL shift to state 24
+-- On MENOR shift to state 28
+-- On MAIS shift to state 26
+-- On MAIORIGUAL shift to state 30
+-- On MAIOR shift to state 32
+-- On IGUAL shift to state 34
+-- On ELOG shift to state 36
+-- On DIV shift to state 22
+-- On DIFERENTE shift to state 38
+-- On NOVALINHA reduce production option(expressao) -> expressao 
+
+State 57:
+comando_print -> PRINT . expressao NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 58
+-- On chamada shift to state 17
+
+State 58:
+comando_print -> PRINT expressao . NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+expressao -> expressao . ELOG expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+-- On OULOG shift to state 13
+-- On NOVALINHA shift to state 59
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MENORIGUAL shift to state 24
+-- On MENOR shift to state 28
+-- On MAIS shift to state 26
+-- On MAIORIGUAL shift to state 30
+-- On MAIOR shift to state 32
+-- On IGUAL shift to state 34
+-- On ELOG shift to state 36
+-- On DIV shift to state 22
+-- On DIFERENTE shift to state 38
+
+State 59:
+comando_print -> PRINT expressao NOVALINHA . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando_print -> PRINT expressao NOVALINHA 
+-- On RETURN reduce production comando_print -> PRINT expressao NOVALINHA 
+-- On PRINT reduce production comando_print -> PRINT expressao NOVALINHA 
+-- On INPUTS reduce production comando_print -> PRINT expressao NOVALINHA 
+-- On INPUTI reduce production comando_print -> PRINT expressao NOVALINHA 
+-- On INPUTF reduce production comando_print -> PRINT expressao NOVALINHA 
+-- On INPUTC reduce production comando_print -> PRINT expressao NOVALINHA 
+-- On IF reduce production comando_print -> PRINT expressao NOVALINHA 
+-- On ID reduce production comando_print -> PRINT expressao NOVALINHA 
+-- On FOR reduce production comando_print -> PRINT expressao NOVALINHA 
+-- On EOF reduce production comando_print -> PRINT expressao NOVALINHA 
+-- On DEF reduce production comando_print -> PRINT expressao NOVALINHA 
+-- On DEDENTA reduce production comando_print -> PRINT expressao NOVALINHA 
+
+State 60:
+comando_inputs -> INPUTS . expressao NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 61
+-- On chamada shift to state 17
+
+State 61:
+comando_inputs -> INPUTS expressao . NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+expressao -> expressao . ELOG expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+-- On OULOG shift to state 13
+-- On NOVALINHA shift to state 62
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MENORIGUAL shift to state 24
+-- On MENOR shift to state 28
+-- On MAIS shift to state 26
+-- On MAIORIGUAL shift to state 30
+-- On MAIOR shift to state 32
+-- On IGUAL shift to state 34
+-- On ELOG shift to state 36
+-- On DIV shift to state 22
+-- On DIFERENTE shift to state 38
+
+State 62:
+comando_inputs -> INPUTS expressao NOVALINHA . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando_inputs -> INPUTS expressao NOVALINHA 
+-- On RETURN reduce production comando_inputs -> INPUTS expressao NOVALINHA 
+-- On PRINT reduce production comando_inputs -> INPUTS expressao NOVALINHA 
+-- On INPUTS reduce production comando_inputs -> INPUTS expressao NOVALINHA 
+-- On INPUTI reduce production comando_inputs -> INPUTS expressao NOVALINHA 
+-- On INPUTF reduce production comando_inputs -> INPUTS expressao NOVALINHA 
+-- On INPUTC reduce production comando_inputs -> INPUTS expressao NOVALINHA 
+-- On IF reduce production comando_inputs -> INPUTS expressao NOVALINHA 
+-- On ID reduce production comando_inputs -> INPUTS expressao NOVALINHA 
+-- On FOR reduce production comando_inputs -> INPUTS expressao NOVALINHA 
+-- On EOF reduce production comando_inputs -> INPUTS expressao NOVALINHA 
+-- On DEF reduce production comando_inputs -> INPUTS expressao NOVALINHA 
+-- On DEDENTA reduce production comando_inputs -> INPUTS expressao NOVALINHA 
+
+State 63:
+comando_inputi -> INPUTI . expressao NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 64
+-- On chamada shift to state 17
+
+State 64:
+comando_inputi -> INPUTI expressao . NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+expressao -> expressao . ELOG expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+-- On OULOG shift to state 13
+-- On NOVALINHA shift to state 65
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MENORIGUAL shift to state 24
+-- On MENOR shift to state 28
+-- On MAIS shift to state 26
+-- On MAIORIGUAL shift to state 30
+-- On MAIOR shift to state 32
+-- On IGUAL shift to state 34
+-- On ELOG shift to state 36
+-- On DIV shift to state 22
+-- On DIFERENTE shift to state 38
+
+State 65:
+comando_inputi -> INPUTI expressao NOVALINHA . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando_inputi -> INPUTI expressao NOVALINHA 
+-- On RETURN reduce production comando_inputi -> INPUTI expressao NOVALINHA 
+-- On PRINT reduce production comando_inputi -> INPUTI expressao NOVALINHA 
+-- On INPUTS reduce production comando_inputi -> INPUTI expressao NOVALINHA 
+-- On INPUTI reduce production comando_inputi -> INPUTI expressao NOVALINHA 
+-- On INPUTF reduce production comando_inputi -> INPUTI expressao NOVALINHA 
+-- On INPUTC reduce production comando_inputi -> INPUTI expressao NOVALINHA 
+-- On IF reduce production comando_inputi -> INPUTI expressao NOVALINHA 
+-- On ID reduce production comando_inputi -> INPUTI expressao NOVALINHA 
+-- On FOR reduce production comando_inputi -> INPUTI expressao NOVALINHA 
+-- On EOF reduce production comando_inputi -> INPUTI expressao NOVALINHA 
+-- On DEF reduce production comando_inputi -> INPUTI expressao NOVALINHA 
+-- On DEDENTA reduce production comando_inputi -> INPUTI expressao NOVALINHA 
+
+State 66:
+comando_inputf -> INPUTF . expressao NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 67
+-- On chamada shift to state 17
+
+State 67:
+comando_inputf -> INPUTF expressao . NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+expressao -> expressao . ELOG expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+-- On OULOG shift to state 13
+-- On NOVALINHA shift to state 68
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MENORIGUAL shift to state 24
+-- On MENOR shift to state 28
+-- On MAIS shift to state 26
+-- On MAIORIGUAL shift to state 30
+-- On MAIOR shift to state 32
+-- On IGUAL shift to state 34
+-- On ELOG shift to state 36
+-- On DIV shift to state 22
+-- On DIFERENTE shift to state 38
+
+State 68:
+comando_inputf -> INPUTF expressao NOVALINHA . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando_inputf -> INPUTF expressao NOVALINHA 
+-- On RETURN reduce production comando_inputf -> INPUTF expressao NOVALINHA 
+-- On PRINT reduce production comando_inputf -> INPUTF expressao NOVALINHA 
+-- On INPUTS reduce production comando_inputf -> INPUTF expressao NOVALINHA 
+-- On INPUTI reduce production comando_inputf -> INPUTF expressao NOVALINHA 
+-- On INPUTF reduce production comando_inputf -> INPUTF expressao NOVALINHA 
+-- On INPUTC reduce production comando_inputf -> INPUTF expressao NOVALINHA 
+-- On IF reduce production comando_inputf -> INPUTF expressao NOVALINHA 
+-- On ID reduce production comando_inputf -> INPUTF expressao NOVALINHA 
+-- On FOR reduce production comando_inputf -> INPUTF expressao NOVALINHA 
+-- On EOF reduce production comando_inputf -> INPUTF expressao NOVALINHA 
+-- On DEF reduce production comando_inputf -> INPUTF expressao NOVALINHA 
+-- On DEDENTA reduce production comando_inputf -> INPUTF expressao NOVALINHA 
+
+State 69:
+comando_inputc -> INPUTC . expressao NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 70
+-- On chamada shift to state 17
+
+State 70:
+comando_inputc -> INPUTC expressao . NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+expressao -> expressao . ELOG expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+-- On OULOG shift to state 13
+-- On NOVALINHA shift to state 71
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MENORIGUAL shift to state 24
+-- On MENOR shift to state 28
+-- On MAIS shift to state 26
+-- On MAIORIGUAL shift to state 30
+-- On MAIOR shift to state 32
+-- On IGUAL shift to state 34
+-- On ELOG shift to state 36
+-- On DIV shift to state 22
+-- On DIFERENTE shift to state 38
+
+State 71:
+comando_inputc -> INPUTC expressao NOVALINHA . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando_inputc -> INPUTC expressao NOVALINHA 
+-- On RETURN reduce production comando_inputc -> INPUTC expressao NOVALINHA 
+-- On PRINT reduce production comando_inputc -> INPUTC expressao NOVALINHA 
+-- On INPUTS reduce production comando_inputc -> INPUTC expressao NOVALINHA 
+-- On INPUTI reduce production comando_inputc -> INPUTC expressao NOVALINHA 
+-- On INPUTF reduce production comando_inputc -> INPUTC expressao NOVALINHA 
+-- On INPUTC reduce production comando_inputc -> INPUTC expressao NOVALINHA 
+-- On IF reduce production comando_inputc -> INPUTC expressao NOVALINHA 
+-- On ID reduce production comando_inputc -> INPUTC expressao NOVALINHA 
+-- On FOR reduce production comando_inputc -> INPUTC expressao NOVALINHA 
+-- On EOF reduce production comando_inputc -> INPUTC expressao NOVALINHA 
+-- On DEF reduce production comando_inputc -> INPUTC expressao NOVALINHA 
+-- On DEDENTA reduce production comando_inputc -> INPUTC expressao NOVALINHA 
+
+State 72:
+comando_se -> IF . expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 73
+-- On chamada shift to state 17
+
+State 73:
+comando_se -> IF expressao . DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+expressao -> expressao . ELOG expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+-- On OULOG shift to state 13
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MENORIGUAL shift to state 24
+-- On MENOR shift to state 28
+-- On MAIS shift to state 26
+-- On MAIORIGUAL shift to state 30
+-- On MAIOR shift to state 32
+-- On IGUAL shift to state 34
+-- On ELOG shift to state 36
+-- On DPTOS shift to state 74
+-- On DIV shift to state 22
+-- On DIFERENTE shift to state 38
+
+State 74:
+comando_se -> IF expressao DPTOS . NOVALINHA INDENTA comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On NOVALINHA shift to state 75
+
+State 75:
+comando_se -> IF expressao DPTOS NOVALINHA . INDENTA comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On INDENTA shift to state 76
+
+State 76:
+comando_se -> IF expressao DPTOS NOVALINHA INDENTA . comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE shift to state 1
+-- On RETURN shift to state 53
+-- On PRINT shift to state 57
+-- On INPUTS shift to state 60
+-- On INPUTI shift to state 63
+-- On INPUTF shift to state 66
+-- On INPUTC shift to state 69
+-- On IF shift to state 72
+-- On ID shift to state 77
+-- On FOR shift to state 96
+-- On nonempty_list(comando) shift to state 108
+-- On comandos shift to state 131
+-- On comando_while shift to state 111
+-- On comando_se shift to state 112
+-- On comando_retorno shift to state 113
+-- On comando_print shift to state 114
+-- On comando_inputs shift to state 115
+-- On comando_inputi shift to state 116
+-- On comando_inputf shift to state 117
+-- On comando_inputc shift to state 118
+-- On comando_for shift to state 119
+-- On comando_chamada shift to state 120
+-- On comando_atribuicao_sub shift to state 121
+-- On comando_atribuicao_mul shift to state 122
+-- On comando_atribuicao_mod shift to state 123
+-- On comando_atribuicao_mais shift to state 124
+-- On comando_atribuicao_div shift to state 125
+-- On comando_atribuicao shift to state 126
+-- On comando shift to state 127
+-- On chamada shift to state 129
+
+State 77:
+chamada -> ID . APAR loption(separated_nonempty_list(VIRG,expressao)) FPAR [ NOVALINHA ]
+comando_atribuicao -> ID . ATRIB expressao NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+comando_atribuicao_div -> ID . SUBATRIB expressao NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+comando_atribuicao_mais -> ID . SOMAATRIB expressao NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+comando_atribuicao_mod -> ID . MODATRIB expressao NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+comando_atribuicao_mul -> ID . MULATRIB expressao NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+comando_atribuicao_sub -> ID . DIVATRIB expressao NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On SUBATRIB shift to state 78
+-- On SOMAATRIB shift to state 81
+-- On MULATRIB shift to state 84
+-- On MODATRIB shift to state 87
+-- On DIVATRIB shift to state 90
+-- On ATRIB shift to state 93
+-- On APAR shift to state 10
+
+State 78:
+comando_atribuicao_div -> ID SUBATRIB . expressao NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 79
+-- On chamada shift to state 17
+
+State 79:
+comando_atribuicao_div -> ID SUBATRIB expressao . NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+expressao -> expressao . ELOG expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+-- On OULOG shift to state 13
+-- On NOVALINHA shift to state 80
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MENORIGUAL shift to state 24
+-- On MENOR shift to state 28
+-- On MAIS shift to state 26
+-- On MAIORIGUAL shift to state 30
+-- On MAIOR shift to state 32
+-- On IGUAL shift to state 34
+-- On ELOG shift to state 36
+-- On DIV shift to state 22
+-- On DIFERENTE shift to state 38
+
+State 80:
+comando_atribuicao_div -> ID SUBATRIB expressao NOVALINHA . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando_atribuicao_div -> ID SUBATRIB expressao NOVALINHA 
+-- On RETURN reduce production comando_atribuicao_div -> ID SUBATRIB expressao NOVALINHA 
+-- On PRINT reduce production comando_atribuicao_div -> ID SUBATRIB expressao NOVALINHA 
+-- On INPUTS reduce production comando_atribuicao_div -> ID SUBATRIB expressao NOVALINHA 
+-- On INPUTI reduce production comando_atribuicao_div -> ID SUBATRIB expressao NOVALINHA 
+-- On INPUTF reduce production comando_atribuicao_div -> ID SUBATRIB expressao NOVALINHA 
+-- On INPUTC reduce production comando_atribuicao_div -> ID SUBATRIB expressao NOVALINHA 
+-- On IF reduce production comando_atribuicao_div -> ID SUBATRIB expressao NOVALINHA 
+-- On ID reduce production comando_atribuicao_div -> ID SUBATRIB expressao NOVALINHA 
+-- On FOR reduce production comando_atribuicao_div -> ID SUBATRIB expressao NOVALINHA 
+-- On EOF reduce production comando_atribuicao_div -> ID SUBATRIB expressao NOVALINHA 
+-- On DEF reduce production comando_atribuicao_div -> ID SUBATRIB expressao NOVALINHA 
+-- On DEDENTA reduce production comando_atribuicao_div -> ID SUBATRIB expressao NOVALINHA 
+
+State 81:
+comando_atribuicao_mais -> ID SOMAATRIB . expressao NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 82
+-- On chamada shift to state 17
+
+State 82:
+comando_atribuicao_mais -> ID SOMAATRIB expressao . NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+expressao -> expressao . ELOG expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+-- On OULOG shift to state 13
+-- On NOVALINHA shift to state 83
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MENORIGUAL shift to state 24
+-- On MENOR shift to state 28
+-- On MAIS shift to state 26
+-- On MAIORIGUAL shift to state 30
+-- On MAIOR shift to state 32
+-- On IGUAL shift to state 34
+-- On ELOG shift to state 36
+-- On DIV shift to state 22
+-- On DIFERENTE shift to state 38
+
+State 83:
+comando_atribuicao_mais -> ID SOMAATRIB expressao NOVALINHA . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando_atribuicao_mais -> ID SOMAATRIB expressao NOVALINHA 
+-- On RETURN reduce production comando_atribuicao_mais -> ID SOMAATRIB expressao NOVALINHA 
+-- On PRINT reduce production comando_atribuicao_mais -> ID SOMAATRIB expressao NOVALINHA 
+-- On INPUTS reduce production comando_atribuicao_mais -> ID SOMAATRIB expressao NOVALINHA 
+-- On INPUTI reduce production comando_atribuicao_mais -> ID SOMAATRIB expressao NOVALINHA 
+-- On INPUTF reduce production comando_atribuicao_mais -> ID SOMAATRIB expressao NOVALINHA 
+-- On INPUTC reduce production comando_atribuicao_mais -> ID SOMAATRIB expressao NOVALINHA 
+-- On IF reduce production comando_atribuicao_mais -> ID SOMAATRIB expressao NOVALINHA 
+-- On ID reduce production comando_atribuicao_mais -> ID SOMAATRIB expressao NOVALINHA 
+-- On FOR reduce production comando_atribuicao_mais -> ID SOMAATRIB expressao NOVALINHA 
+-- On EOF reduce production comando_atribuicao_mais -> ID SOMAATRIB expressao NOVALINHA 
+-- On DEF reduce production comando_atribuicao_mais -> ID SOMAATRIB expressao NOVALINHA 
+-- On DEDENTA reduce production comando_atribuicao_mais -> ID SOMAATRIB expressao NOVALINHA 
+
+State 84:
+comando_atribuicao_mul -> ID MULATRIB . expressao NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 85
+-- On chamada shift to state 17
+
+State 85:
+comando_atribuicao_mul -> ID MULATRIB expressao . NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+expressao -> expressao . ELOG expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+-- On OULOG shift to state 13
+-- On NOVALINHA shift to state 86
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MENORIGUAL shift to state 24
+-- On MENOR shift to state 28
+-- On MAIS shift to state 26
+-- On MAIORIGUAL shift to state 30
+-- On MAIOR shift to state 32
+-- On IGUAL shift to state 34
+-- On ELOG shift to state 36
+-- On DIV shift to state 22
+-- On DIFERENTE shift to state 38
+
+State 86:
+comando_atribuicao_mul -> ID MULATRIB expressao NOVALINHA . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando_atribuicao_mul -> ID MULATRIB expressao NOVALINHA 
+-- On RETURN reduce production comando_atribuicao_mul -> ID MULATRIB expressao NOVALINHA 
+-- On PRINT reduce production comando_atribuicao_mul -> ID MULATRIB expressao NOVALINHA 
+-- On INPUTS reduce production comando_atribuicao_mul -> ID MULATRIB expressao NOVALINHA 
+-- On INPUTI reduce production comando_atribuicao_mul -> ID MULATRIB expressao NOVALINHA 
+-- On INPUTF reduce production comando_atribuicao_mul -> ID MULATRIB expressao NOVALINHA 
+-- On INPUTC reduce production comando_atribuicao_mul -> ID MULATRIB expressao NOVALINHA 
+-- On IF reduce production comando_atribuicao_mul -> ID MULATRIB expressao NOVALINHA 
+-- On ID reduce production comando_atribuicao_mul -> ID MULATRIB expressao NOVALINHA 
+-- On FOR reduce production comando_atribuicao_mul -> ID MULATRIB expressao NOVALINHA 
+-- On EOF reduce production comando_atribuicao_mul -> ID MULATRIB expressao NOVALINHA 
+-- On DEF reduce production comando_atribuicao_mul -> ID MULATRIB expressao NOVALINHA 
+-- On DEDENTA reduce production comando_atribuicao_mul -> ID MULATRIB expressao NOVALINHA 
+
+State 87:
+comando_atribuicao_mod -> ID MODATRIB . expressao NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 88
+-- On chamada shift to state 17
+
+State 88:
+comando_atribuicao_mod -> ID MODATRIB expressao . NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+expressao -> expressao . ELOG expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+-- On OULOG shift to state 13
+-- On NOVALINHA shift to state 89
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MENORIGUAL shift to state 24
+-- On MENOR shift to state 28
+-- On MAIS shift to state 26
+-- On MAIORIGUAL shift to state 30
+-- On MAIOR shift to state 32
+-- On IGUAL shift to state 34
+-- On ELOG shift to state 36
+-- On DIV shift to state 22
+-- On DIFERENTE shift to state 38
+
+State 89:
+comando_atribuicao_mod -> ID MODATRIB expressao NOVALINHA . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando_atribuicao_mod -> ID MODATRIB expressao NOVALINHA 
+-- On RETURN reduce production comando_atribuicao_mod -> ID MODATRIB expressao NOVALINHA 
+-- On PRINT reduce production comando_atribuicao_mod -> ID MODATRIB expressao NOVALINHA 
+-- On INPUTS reduce production comando_atribuicao_mod -> ID MODATRIB expressao NOVALINHA 
+-- On INPUTI reduce production comando_atribuicao_mod -> ID MODATRIB expressao NOVALINHA 
+-- On INPUTF reduce production comando_atribuicao_mod -> ID MODATRIB expressao NOVALINHA 
+-- On INPUTC reduce production comando_atribuicao_mod -> ID MODATRIB expressao NOVALINHA 
+-- On IF reduce production comando_atribuicao_mod -> ID MODATRIB expressao NOVALINHA 
+-- On ID reduce production comando_atribuicao_mod -> ID MODATRIB expressao NOVALINHA 
+-- On FOR reduce production comando_atribuicao_mod -> ID MODATRIB expressao NOVALINHA 
+-- On EOF reduce production comando_atribuicao_mod -> ID MODATRIB expressao NOVALINHA 
+-- On DEF reduce production comando_atribuicao_mod -> ID MODATRIB expressao NOVALINHA 
+-- On DEDENTA reduce production comando_atribuicao_mod -> ID MODATRIB expressao NOVALINHA 
+
+State 90:
+comando_atribuicao_sub -> ID DIVATRIB . expressao NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 91
+-- On chamada shift to state 17
+
+State 91:
+comando_atribuicao_sub -> ID DIVATRIB expressao . NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+expressao -> expressao . ELOG expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+-- On OULOG shift to state 13
+-- On NOVALINHA shift to state 92
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MENORIGUAL shift to state 24
+-- On MENOR shift to state 28
+-- On MAIS shift to state 26
+-- On MAIORIGUAL shift to state 30
+-- On MAIOR shift to state 32
+-- On IGUAL shift to state 34
+-- On ELOG shift to state 36
+-- On DIV shift to state 22
+-- On DIFERENTE shift to state 38
+
+State 92:
+comando_atribuicao_sub -> ID DIVATRIB expressao NOVALINHA . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando_atribuicao_sub -> ID DIVATRIB expressao NOVALINHA 
+-- On RETURN reduce production comando_atribuicao_sub -> ID DIVATRIB expressao NOVALINHA 
+-- On PRINT reduce production comando_atribuicao_sub -> ID DIVATRIB expressao NOVALINHA 
+-- On INPUTS reduce production comando_atribuicao_sub -> ID DIVATRIB expressao NOVALINHA 
+-- On INPUTI reduce production comando_atribuicao_sub -> ID DIVATRIB expressao NOVALINHA 
+-- On INPUTF reduce production comando_atribuicao_sub -> ID DIVATRIB expressao NOVALINHA 
+-- On INPUTC reduce production comando_atribuicao_sub -> ID DIVATRIB expressao NOVALINHA 
+-- On IF reduce production comando_atribuicao_sub -> ID DIVATRIB expressao NOVALINHA 
+-- On ID reduce production comando_atribuicao_sub -> ID DIVATRIB expressao NOVALINHA 
+-- On FOR reduce production comando_atribuicao_sub -> ID DIVATRIB expressao NOVALINHA 
+-- On EOF reduce production comando_atribuicao_sub -> ID DIVATRIB expressao NOVALINHA 
+-- On DEF reduce production comando_atribuicao_sub -> ID DIVATRIB expressao NOVALINHA 
+-- On DEDENTA reduce production comando_atribuicao_sub -> ID DIVATRIB expressao NOVALINHA 
+
+State 93:
+comando_atribuicao -> ID ATRIB . expressao NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 94
+-- On chamada shift to state 17
+
+State 94:
+comando_atribuicao -> ID ATRIB expressao . NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+expressao -> expressao . ELOG expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ OULOG NOVALINHA MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+-- On OULOG shift to state 13
+-- On NOVALINHA shift to state 95
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MENORIGUAL shift to state 24
+-- On MENOR shift to state 28
+-- On MAIS shift to state 26
+-- On MAIORIGUAL shift to state 30
+-- On MAIOR shift to state 32
+-- On IGUAL shift to state 34
+-- On ELOG shift to state 36
+-- On DIV shift to state 22
+-- On DIFERENTE shift to state 38
+
+State 95:
+comando_atribuicao -> ID ATRIB expressao NOVALINHA . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando_atribuicao -> ID ATRIB expressao NOVALINHA 
+-- On RETURN reduce production comando_atribuicao -> ID ATRIB expressao NOVALINHA 
+-- On PRINT reduce production comando_atribuicao -> ID ATRIB expressao NOVALINHA 
+-- On INPUTS reduce production comando_atribuicao -> ID ATRIB expressao NOVALINHA 
+-- On INPUTI reduce production comando_atribuicao -> ID ATRIB expressao NOVALINHA 
+-- On INPUTF reduce production comando_atribuicao -> ID ATRIB expressao NOVALINHA 
+-- On INPUTC reduce production comando_atribuicao -> ID ATRIB expressao NOVALINHA 
+-- On IF reduce production comando_atribuicao -> ID ATRIB expressao NOVALINHA 
+-- On ID reduce production comando_atribuicao -> ID ATRIB expressao NOVALINHA 
+-- On FOR reduce production comando_atribuicao -> ID ATRIB expressao NOVALINHA 
+-- On EOF reduce production comando_atribuicao -> ID ATRIB expressao NOVALINHA 
+-- On DEF reduce production comando_atribuicao -> ID ATRIB expressao NOVALINHA 
+-- On DEDENTA reduce production comando_atribuicao -> ID ATRIB expressao NOVALINHA 
+
+State 96:
+comando_for -> FOR . ID IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On ID shift to state 97
+
+State 97:
+comando_for -> FOR ID . IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On IN shift to state 98
+
+State 98:
+comando_for -> FOR ID IN . RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On RANGE shift to state 99
+
+State 99:
+comando_for -> FOR ID IN RANGE . APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On APAR shift to state 100
+
+State 100:
+comando_for -> FOR ID IN RANGE APAR . expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 101
+-- On chamada shift to state 17
+
+State 101:
+comando_for -> FOR ID IN RANGE APAR expressao . VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+expressao -> expressao . ELOG expressao [ VIRG OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ VIRG OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ VIRG OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ VIRG OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ VIRG OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ VIRG OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ VIRG OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ VIRG OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ VIRG OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ VIRG OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ VIRG OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ VIRG OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ VIRG OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DIV DIFERENTE ]
+-- On VIRG shift to state 102
+-- On OULOG shift to state 13
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MENORIGUAL shift to state 24
+-- On MENOR shift to state 28
+-- On MAIS shift to state 26
+-- On MAIORIGUAL shift to state 30
+-- On MAIOR shift to state 32
+-- On IGUAL shift to state 34
+-- On ELOG shift to state 36
+-- On DIV shift to state 22
+-- On DIFERENTE shift to state 38
+
+State 102:
+comando_for -> FOR ID IN RANGE APAR expressao VIRG . expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 103
+-- On chamada shift to state 17
+
+State 103:
+comando_for -> FOR ID IN RANGE APAR expressao VIRG expressao . FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+expressao -> expressao . ELOG expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR ELOG DIV DIFERENTE ]
+-- On OULOG shift to state 13
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MENORIGUAL shift to state 24
+-- On MENOR shift to state 28
+-- On MAIS shift to state 26
+-- On MAIORIGUAL shift to state 30
+-- On MAIOR shift to state 32
+-- On IGUAL shift to state 34
+-- On FPAR shift to state 104
+-- On ELOG shift to state 36
+-- On DIV shift to state 22
+-- On DIFERENTE shift to state 38
+
+State 104:
+comando_for -> FOR ID IN RANGE APAR expressao VIRG expressao FPAR . DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On DPTOS shift to state 105
+
+State 105:
+comando_for -> FOR ID IN RANGE APAR expressao VIRG expressao FPAR DPTOS . NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On NOVALINHA shift to state 106
+
+State 106:
+comando_for -> FOR ID IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA . INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On INDENTA shift to state 107
+
+State 107:
+comando_for -> FOR ID IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA . comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE shift to state 1
+-- On RETURN shift to state 53
+-- On PRINT shift to state 57
+-- On INPUTS shift to state 60
+-- On INPUTI shift to state 63
+-- On INPUTF shift to state 66
+-- On INPUTC shift to state 69
+-- On IF shift to state 72
+-- On ID shift to state 77
+-- On FOR shift to state 96
+-- On nonempty_list(comando) shift to state 108
+-- On comandos shift to state 109
+-- On comando_while shift to state 111
+-- On comando_se shift to state 112
+-- On comando_retorno shift to state 113
+-- On comando_print shift to state 114
+-- On comando_inputs shift to state 115
+-- On comando_inputi shift to state 116
+-- On comando_inputf shift to state 117
+-- On comando_inputc shift to state 118
+-- On comando_for shift to state 119
+-- On comando_chamada shift to state 120
+-- On comando_atribuicao_sub shift to state 121
+-- On comando_atribuicao_mul shift to state 122
+-- On comando_atribuicao_mod shift to state 123
+-- On comando_atribuicao_mais shift to state 124
+-- On comando_atribuicao_div shift to state 125
+-- On comando_atribuicao shift to state 126
+-- On comando shift to state 127
+-- On chamada shift to state 129
+
+State 108:
+comandos -> nonempty_list(comando) . [ DEDENTA ]
+-- On DEDENTA reduce production comandos -> nonempty_list(comando) 
+
+State 109:
+comando_for -> FOR ID IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos . DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On DEDENTA shift to state 110
+
+State 110:
+comando_for -> FOR ID IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando_for -> FOR ID IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On RETURN reduce production comando_for -> FOR ID IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On PRINT reduce production comando_for -> FOR ID IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On INPUTS reduce production comando_for -> FOR ID IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On INPUTI reduce production comando_for -> FOR ID IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On INPUTF reduce production comando_for -> FOR ID IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On INPUTC reduce production comando_for -> FOR ID IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On IF reduce production comando_for -> FOR ID IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On ID reduce production comando_for -> FOR ID IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On FOR reduce production comando_for -> FOR ID IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On EOF reduce production comando_for -> FOR ID IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On DEF reduce production comando_for -> FOR ID IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On DEDENTA reduce production comando_for -> FOR ID IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA 
+
+State 111:
+comando -> comando_while . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando -> comando_while 
+-- On RETURN reduce production comando -> comando_while 
+-- On PRINT reduce production comando -> comando_while 
+-- On INPUTS reduce production comando -> comando_while 
+-- On INPUTI reduce production comando -> comando_while 
+-- On INPUTF reduce production comando -> comando_while 
+-- On INPUTC reduce production comando -> comando_while 
+-- On IF reduce production comando -> comando_while 
+-- On ID reduce production comando -> comando_while 
+-- On FOR reduce production comando -> comando_while 
+-- On EOF reduce production comando -> comando_while 
+-- On DEF reduce production comando -> comando_while 
+-- On DEDENTA reduce production comando -> comando_while 
+
+State 112:
+comando -> comando_se . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando -> comando_se 
+-- On RETURN reduce production comando -> comando_se 
+-- On PRINT reduce production comando -> comando_se 
+-- On INPUTS reduce production comando -> comando_se 
+-- On INPUTI reduce production comando -> comando_se 
+-- On INPUTF reduce production comando -> comando_se 
+-- On INPUTC reduce production comando -> comando_se 
+-- On IF reduce production comando -> comando_se 
+-- On ID reduce production comando -> comando_se 
+-- On FOR reduce production comando -> comando_se 
+-- On EOF reduce production comando -> comando_se 
+-- On DEF reduce production comando -> comando_se 
+-- On DEDENTA reduce production comando -> comando_se 
+
+State 113:
+comando -> comando_retorno . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando -> comando_retorno 
+-- On RETURN reduce production comando -> comando_retorno 
+-- On PRINT reduce production comando -> comando_retorno 
+-- On INPUTS reduce production comando -> comando_retorno 
+-- On INPUTI reduce production comando -> comando_retorno 
+-- On INPUTF reduce production comando -> comando_retorno 
+-- On INPUTC reduce production comando -> comando_retorno 
+-- On IF reduce production comando -> comando_retorno 
+-- On ID reduce production comando -> comando_retorno 
+-- On FOR reduce production comando -> comando_retorno 
+-- On EOF reduce production comando -> comando_retorno 
+-- On DEF reduce production comando -> comando_retorno 
+-- On DEDENTA reduce production comando -> comando_retorno 
+
+State 114:
+comando -> comando_print . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando -> comando_print 
+-- On RETURN reduce production comando -> comando_print 
+-- On PRINT reduce production comando -> comando_print 
+-- On INPUTS reduce production comando -> comando_print 
+-- On INPUTI reduce production comando -> comando_print 
+-- On INPUTF reduce production comando -> comando_print 
+-- On INPUTC reduce production comando -> comando_print 
+-- On IF reduce production comando -> comando_print 
+-- On ID reduce production comando -> comando_print 
+-- On FOR reduce production comando -> comando_print 
+-- On EOF reduce production comando -> comando_print 
+-- On DEF reduce production comando -> comando_print 
+-- On DEDENTA reduce production comando -> comando_print 
+
+State 115:
+comando -> comando_inputs . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando -> comando_inputs 
+-- On RETURN reduce production comando -> comando_inputs 
+-- On PRINT reduce production comando -> comando_inputs 
+-- On INPUTS reduce production comando -> comando_inputs 
+-- On INPUTI reduce production comando -> comando_inputs 
+-- On INPUTF reduce production comando -> comando_inputs 
+-- On INPUTC reduce production comando -> comando_inputs 
+-- On IF reduce production comando -> comando_inputs 
+-- On ID reduce production comando -> comando_inputs 
+-- On FOR reduce production comando -> comando_inputs 
+-- On EOF reduce production comando -> comando_inputs 
+-- On DEF reduce production comando -> comando_inputs 
+-- On DEDENTA reduce production comando -> comando_inputs 
+
+State 116:
+comando -> comando_inputi . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando -> comando_inputi 
+-- On RETURN reduce production comando -> comando_inputi 
+-- On PRINT reduce production comando -> comando_inputi 
+-- On INPUTS reduce production comando -> comando_inputi 
+-- On INPUTI reduce production comando -> comando_inputi 
+-- On INPUTF reduce production comando -> comando_inputi 
+-- On INPUTC reduce production comando -> comando_inputi 
+-- On IF reduce production comando -> comando_inputi 
+-- On ID reduce production comando -> comando_inputi 
+-- On FOR reduce production comando -> comando_inputi 
+-- On EOF reduce production comando -> comando_inputi 
+-- On DEF reduce production comando -> comando_inputi 
+-- On DEDENTA reduce production comando -> comando_inputi 
+
+State 117:
+comando -> comando_inputf . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando -> comando_inputf 
+-- On RETURN reduce production comando -> comando_inputf 
+-- On PRINT reduce production comando -> comando_inputf 
+-- On INPUTS reduce production comando -> comando_inputf 
+-- On INPUTI reduce production comando -> comando_inputf 
+-- On INPUTF reduce production comando -> comando_inputf 
+-- On INPUTC reduce production comando -> comando_inputf 
+-- On IF reduce production comando -> comando_inputf 
+-- On ID reduce production comando -> comando_inputf 
+-- On FOR reduce production comando -> comando_inputf 
+-- On EOF reduce production comando -> comando_inputf 
+-- On DEF reduce production comando -> comando_inputf 
+-- On DEDENTA reduce production comando -> comando_inputf 
+
+State 118:
+comando -> comando_inputc . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando -> comando_inputc 
+-- On RETURN reduce production comando -> comando_inputc 
+-- On PRINT reduce production comando -> comando_inputc 
+-- On INPUTS reduce production comando -> comando_inputc 
+-- On INPUTI reduce production comando -> comando_inputc 
+-- On INPUTF reduce production comando -> comando_inputc 
+-- On INPUTC reduce production comando -> comando_inputc 
+-- On IF reduce production comando -> comando_inputc 
+-- On ID reduce production comando -> comando_inputc 
+-- On FOR reduce production comando -> comando_inputc 
+-- On EOF reduce production comando -> comando_inputc 
+-- On DEF reduce production comando -> comando_inputc 
+-- On DEDENTA reduce production comando -> comando_inputc 
+
+State 119:
+comando -> comando_for . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando -> comando_for 
+-- On RETURN reduce production comando -> comando_for 
+-- On PRINT reduce production comando -> comando_for 
+-- On INPUTS reduce production comando -> comando_for 
+-- On INPUTI reduce production comando -> comando_for 
+-- On INPUTF reduce production comando -> comando_for 
+-- On INPUTC reduce production comando -> comando_for 
+-- On IF reduce production comando -> comando_for 
+-- On ID reduce production comando -> comando_for 
+-- On FOR reduce production comando -> comando_for 
+-- On EOF reduce production comando -> comando_for 
+-- On DEF reduce production comando -> comando_for 
+-- On DEDENTA reduce production comando -> comando_for 
+
+State 120:
+comando -> comando_chamada . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando -> comando_chamada 
+-- On RETURN reduce production comando -> comando_chamada 
+-- On PRINT reduce production comando -> comando_chamada 
+-- On INPUTS reduce production comando -> comando_chamada 
+-- On INPUTI reduce production comando -> comando_chamada 
+-- On INPUTF reduce production comando -> comando_chamada 
+-- On INPUTC reduce production comando -> comando_chamada 
+-- On IF reduce production comando -> comando_chamada 
+-- On ID reduce production comando -> comando_chamada 
+-- On FOR reduce production comando -> comando_chamada 
+-- On EOF reduce production comando -> comando_chamada 
+-- On DEF reduce production comando -> comando_chamada 
+-- On DEDENTA reduce production comando -> comando_chamada 
+
+State 121:
+comando -> comando_atribuicao_sub . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando -> comando_atribuicao_sub 
+-- On RETURN reduce production comando -> comando_atribuicao_sub 
+-- On PRINT reduce production comando -> comando_atribuicao_sub 
+-- On INPUTS reduce production comando -> comando_atribuicao_sub 
+-- On INPUTI reduce production comando -> comando_atribuicao_sub 
+-- On INPUTF reduce production comando -> comando_atribuicao_sub 
+-- On INPUTC reduce production comando -> comando_atribuicao_sub 
+-- On IF reduce production comando -> comando_atribuicao_sub 
+-- On ID reduce production comando -> comando_atribuicao_sub 
+-- On FOR reduce production comando -> comando_atribuicao_sub 
+-- On EOF reduce production comando -> comando_atribuicao_sub 
+-- On DEF reduce production comando -> comando_atribuicao_sub 
+-- On DEDENTA reduce production comando -> comando_atribuicao_sub 
+
+State 122:
+comando -> comando_atribuicao_mul . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando -> comando_atribuicao_mul 
+-- On RETURN reduce production comando -> comando_atribuicao_mul 
+-- On PRINT reduce production comando -> comando_atribuicao_mul 
+-- On INPUTS reduce production comando -> comando_atribuicao_mul 
+-- On INPUTI reduce production comando -> comando_atribuicao_mul 
+-- On INPUTF reduce production comando -> comando_atribuicao_mul 
+-- On INPUTC reduce production comando -> comando_atribuicao_mul 
+-- On IF reduce production comando -> comando_atribuicao_mul 
+-- On ID reduce production comando -> comando_atribuicao_mul 
+-- On FOR reduce production comando -> comando_atribuicao_mul 
+-- On EOF reduce production comando -> comando_atribuicao_mul 
+-- On DEF reduce production comando -> comando_atribuicao_mul 
+-- On DEDENTA reduce production comando -> comando_atribuicao_mul 
+
+State 123:
+comando -> comando_atribuicao_mod . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando -> comando_atribuicao_mod 
+-- On RETURN reduce production comando -> comando_atribuicao_mod 
+-- On PRINT reduce production comando -> comando_atribuicao_mod 
+-- On INPUTS reduce production comando -> comando_atribuicao_mod 
+-- On INPUTI reduce production comando -> comando_atribuicao_mod 
+-- On INPUTF reduce production comando -> comando_atribuicao_mod 
+-- On INPUTC reduce production comando -> comando_atribuicao_mod 
+-- On IF reduce production comando -> comando_atribuicao_mod 
+-- On ID reduce production comando -> comando_atribuicao_mod 
+-- On FOR reduce production comando -> comando_atribuicao_mod 
+-- On EOF reduce production comando -> comando_atribuicao_mod 
+-- On DEF reduce production comando -> comando_atribuicao_mod 
+-- On DEDENTA reduce production comando -> comando_atribuicao_mod 
+
+State 124:
+comando -> comando_atribuicao_mais . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando -> comando_atribuicao_mais 
+-- On RETURN reduce production comando -> comando_atribuicao_mais 
+-- On PRINT reduce production comando -> comando_atribuicao_mais 
+-- On INPUTS reduce production comando -> comando_atribuicao_mais 
+-- On INPUTI reduce production comando -> comando_atribuicao_mais 
+-- On INPUTF reduce production comando -> comando_atribuicao_mais 
+-- On INPUTC reduce production comando -> comando_atribuicao_mais 
+-- On IF reduce production comando -> comando_atribuicao_mais 
+-- On ID reduce production comando -> comando_atribuicao_mais 
+-- On FOR reduce production comando -> comando_atribuicao_mais 
+-- On EOF reduce production comando -> comando_atribuicao_mais 
+-- On DEF reduce production comando -> comando_atribuicao_mais 
+-- On DEDENTA reduce production comando -> comando_atribuicao_mais 
+
+State 125:
+comando -> comando_atribuicao_div . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando -> comando_atribuicao_div 
+-- On RETURN reduce production comando -> comando_atribuicao_div 
+-- On PRINT reduce production comando -> comando_atribuicao_div 
+-- On INPUTS reduce production comando -> comando_atribuicao_div 
+-- On INPUTI reduce production comando -> comando_atribuicao_div 
+-- On INPUTF reduce production comando -> comando_atribuicao_div 
+-- On INPUTC reduce production comando -> comando_atribuicao_div 
+-- On IF reduce production comando -> comando_atribuicao_div 
+-- On ID reduce production comando -> comando_atribuicao_div 
+-- On FOR reduce production comando -> comando_atribuicao_div 
+-- On EOF reduce production comando -> comando_atribuicao_div 
+-- On DEF reduce production comando -> comando_atribuicao_div 
+-- On DEDENTA reduce production comando -> comando_atribuicao_div 
+
+State 126:
+comando -> comando_atribuicao . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando -> comando_atribuicao 
+-- On RETURN reduce production comando -> comando_atribuicao 
+-- On PRINT reduce production comando -> comando_atribuicao 
+-- On INPUTS reduce production comando -> comando_atribuicao 
+-- On INPUTI reduce production comando -> comando_atribuicao 
+-- On INPUTF reduce production comando -> comando_atribuicao 
+-- On INPUTC reduce production comando -> comando_atribuicao 
+-- On IF reduce production comando -> comando_atribuicao 
+-- On ID reduce production comando -> comando_atribuicao 
+-- On FOR reduce production comando -> comando_atribuicao 
+-- On EOF reduce production comando -> comando_atribuicao 
+-- On DEF reduce production comando -> comando_atribuicao 
+-- On DEDENTA reduce production comando -> comando_atribuicao 
+
+State 127:
+nonempty_list(comando) -> comando . [ DEDENTA ]
+nonempty_list(comando) -> comando . nonempty_list(comando) [ DEDENTA ]
+-- On WHILE shift to state 1
+-- On RETURN shift to state 53
+-- On PRINT shift to state 57
+-- On INPUTS shift to state 60
+-- On INPUTI shift to state 63
+-- On INPUTF shift to state 66
+-- On INPUTC shift to state 69
+-- On IF shift to state 72
+-- On ID shift to state 77
+-- On FOR shift to state 96
+-- On nonempty_list(comando) shift to state 128
+-- On comando_while shift to state 111
+-- On comando_se shift to state 112
+-- On comando_retorno shift to state 113
+-- On comando_print shift to state 114
+-- On comando_inputs shift to state 115
+-- On comando_inputi shift to state 116
+-- On comando_inputf shift to state 117
+-- On comando_inputc shift to state 118
+-- On comando_for shift to state 119
+-- On comando_chamada shift to state 120
+-- On comando_atribuicao_sub shift to state 121
+-- On comando_atribuicao_mul shift to state 122
+-- On comando_atribuicao_mod shift to state 123
+-- On comando_atribuicao_mais shift to state 124
+-- On comando_atribuicao_div shift to state 125
+-- On comando_atribuicao shift to state 126
+-- On comando shift to state 127
+-- On chamada shift to state 129
+-- On DEDENTA reduce production nonempty_list(comando) -> comando 
+
+State 128:
+nonempty_list(comando) -> comando nonempty_list(comando) . [ DEDENTA ]
+-- On DEDENTA reduce production nonempty_list(comando) -> comando nonempty_list(comando) 
+
+State 129:
+comando_chamada -> chamada . NOVALINHA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On NOVALINHA shift to state 130
+
+State 130:
+comando_chamada -> chamada NOVALINHA . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando_chamada -> chamada NOVALINHA 
+-- On RETURN reduce production comando_chamada -> chamada NOVALINHA 
+-- On PRINT reduce production comando_chamada -> chamada NOVALINHA 
+-- On INPUTS reduce production comando_chamada -> chamada NOVALINHA 
+-- On INPUTI reduce production comando_chamada -> chamada NOVALINHA 
+-- On INPUTF reduce production comando_chamada -> chamada NOVALINHA 
+-- On INPUTC reduce production comando_chamada -> chamada NOVALINHA 
+-- On IF reduce production comando_chamada -> chamada NOVALINHA 
+-- On ID reduce production comando_chamada -> chamada NOVALINHA 
+-- On FOR reduce production comando_chamada -> chamada NOVALINHA 
+-- On EOF reduce production comando_chamada -> chamada NOVALINHA 
+-- On DEF reduce production comando_chamada -> chamada NOVALINHA 
+-- On DEDENTA reduce production comando_chamada -> chamada NOVALINHA 
+
+State 131:
+comando_se -> IF expressao DPTOS NOVALINHA INDENTA comandos . DEDENTA option(comando_se2) [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On DEDENTA shift to state 132
+
+State 132:
+comando_se -> IF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA . option(comando_se2) [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On ELSE shift to state 133
+-- On ELIF shift to state 139
+-- On option(comando_se2) shift to state 148
+-- On comando_se2 shift to state 147
+-- On WHILE reduce production option(comando_se2) -> 
+-- On RETURN reduce production option(comando_se2) -> 
+-- On PRINT reduce production option(comando_se2) -> 
+-- On INPUTS reduce production option(comando_se2) -> 
+-- On INPUTI reduce production option(comando_se2) -> 
+-- On INPUTF reduce production option(comando_se2) -> 
+-- On INPUTC reduce production option(comando_se2) -> 
+-- On IF reduce production option(comando_se2) -> 
+-- On ID reduce production option(comando_se2) -> 
+-- On FOR reduce production option(comando_se2) -> 
+-- On EOF reduce production option(comando_se2) -> 
+-- On DEF reduce production option(comando_se2) -> 
+-- On DEDENTA reduce production option(comando_se2) -> 
+
+State 133:
+comando_se2 -> ELSE . DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On DPTOS shift to state 134
+
+State 134:
+comando_se2 -> ELSE DPTOS . NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On NOVALINHA shift to state 135
+
+State 135:
+comando_se2 -> ELSE DPTOS NOVALINHA . INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On INDENTA shift to state 136
+
+State 136:
+comando_se2 -> ELSE DPTOS NOVALINHA INDENTA . comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE shift to state 1
+-- On RETURN shift to state 53
+-- On PRINT shift to state 57
+-- On INPUTS shift to state 60
+-- On INPUTI shift to state 63
+-- On INPUTF shift to state 66
+-- On INPUTC shift to state 69
+-- On IF shift to state 72
+-- On ID shift to state 77
+-- On FOR shift to state 96
+-- On nonempty_list(comando) shift to state 108
+-- On comandos shift to state 137
+-- On comando_while shift to state 111
+-- On comando_se shift to state 112
+-- On comando_retorno shift to state 113
+-- On comando_print shift to state 114
+-- On comando_inputs shift to state 115
+-- On comando_inputi shift to state 116
+-- On comando_inputf shift to state 117
+-- On comando_inputc shift to state 118
+-- On comando_for shift to state 119
+-- On comando_chamada shift to state 120
+-- On comando_atribuicao_sub shift to state 121
+-- On comando_atribuicao_mul shift to state 122
+-- On comando_atribuicao_mod shift to state 123
+-- On comando_atribuicao_mais shift to state 124
+-- On comando_atribuicao_div shift to state 125
+-- On comando_atribuicao shift to state 126
+-- On comando shift to state 127
+-- On chamada shift to state 129
+
+State 137:
+comando_se2 -> ELSE DPTOS NOVALINHA INDENTA comandos . DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On DEDENTA shift to state 138
+
+State 138:
+comando_se2 -> ELSE DPTOS NOVALINHA INDENTA comandos DEDENTA . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando_se2 -> ELSE DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On RETURN reduce production comando_se2 -> ELSE DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On PRINT reduce production comando_se2 -> ELSE DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On INPUTS reduce production comando_se2 -> ELSE DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On INPUTI reduce production comando_se2 -> ELSE DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On INPUTF reduce production comando_se2 -> ELSE DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On INPUTC reduce production comando_se2 -> ELSE DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On IF reduce production comando_se2 -> ELSE DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On ID reduce production comando_se2 -> ELSE DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On FOR reduce production comando_se2 -> ELSE DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On EOF reduce production comando_se2 -> ELSE DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On DEF reduce production comando_se2 -> ELSE DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On DEDENTA reduce production comando_se2 -> ELSE DPTOS NOVALINHA INDENTA comandos DEDENTA 
+
+State 139:
+comando_se2 -> ELIF . expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On NAO shift to state 2
+-- On MENOS shift to state 3
+-- On LITSTRING shift to state 4
+-- On LITINT shift to state 5
+-- On LITFLOAT shift to state 6
+-- On LITCHAR shift to state 7
+-- On LITBOOL shift to state 8
+-- On ID shift to state 9
+-- On APAR shift to state 11
+-- On expressao shift to state 140
+-- On chamada shift to state 17
+
+State 140:
+comando_se2 -> ELIF expressao . DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+expressao -> expressao . ELOG expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . OULOG expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIS expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOS expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MUL expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIV expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MOD expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . IGUAL expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . DIFERENTE expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIOR expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENOR expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MAIORIGUAL expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+expressao -> expressao . MENORIGUAL expressao [ OULOG MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL ELOG DPTOS DIV DIFERENTE ]
+-- On OULOG shift to state 13
+-- On MUL shift to state 15
+-- On MOD shift to state 18
+-- On MENOS shift to state 20
+-- On MENORIGUAL shift to state 24
+-- On MENOR shift to state 28
+-- On MAIS shift to state 26
+-- On MAIORIGUAL shift to state 30
+-- On MAIOR shift to state 32
+-- On IGUAL shift to state 34
+-- On ELOG shift to state 36
+-- On DPTOS shift to state 141
+-- On DIV shift to state 22
+-- On DIFERENTE shift to state 38
+
+State 141:
+comando_se2 -> ELIF expressao DPTOS . NOVALINHA INDENTA comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On NOVALINHA shift to state 142
+
+State 142:
+comando_se2 -> ELIF expressao DPTOS NOVALINHA . INDENTA comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On INDENTA shift to state 143
+
+State 143:
+comando_se2 -> ELIF expressao DPTOS NOVALINHA INDENTA . comandos DEDENTA option(comando_se2) [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE shift to state 1
+-- On RETURN shift to state 53
+-- On PRINT shift to state 57
+-- On INPUTS shift to state 60
+-- On INPUTI shift to state 63
+-- On INPUTF shift to state 66
+-- On INPUTC shift to state 69
+-- On IF shift to state 72
+-- On ID shift to state 77
+-- On FOR shift to state 96
+-- On nonempty_list(comando) shift to state 108
+-- On comandos shift to state 144
+-- On comando_while shift to state 111
+-- On comando_se shift to state 112
+-- On comando_retorno shift to state 113
+-- On comando_print shift to state 114
+-- On comando_inputs shift to state 115
+-- On comando_inputi shift to state 116
+-- On comando_inputf shift to state 117
+-- On comando_inputc shift to state 118
+-- On comando_for shift to state 119
+-- On comando_chamada shift to state 120
+-- On comando_atribuicao_sub shift to state 121
+-- On comando_atribuicao_mul shift to state 122
+-- On comando_atribuicao_mod shift to state 123
+-- On comando_atribuicao_mais shift to state 124
+-- On comando_atribuicao_div shift to state 125
+-- On comando_atribuicao shift to state 126
+-- On comando shift to state 127
+-- On chamada shift to state 129
+
+State 144:
+comando_se2 -> ELIF expressao DPTOS NOVALINHA INDENTA comandos . DEDENTA option(comando_se2) [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On DEDENTA shift to state 145
+
+State 145:
+comando_se2 -> ELIF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA . option(comando_se2) [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On ELSE shift to state 133
+-- On ELIF shift to state 139
+-- On option(comando_se2) shift to state 146
+-- On comando_se2 shift to state 147
+-- On WHILE reduce production option(comando_se2) -> 
+-- On RETURN reduce production option(comando_se2) -> 
+-- On PRINT reduce production option(comando_se2) -> 
+-- On INPUTS reduce production option(comando_se2) -> 
+-- On INPUTI reduce production option(comando_se2) -> 
+-- On INPUTF reduce production option(comando_se2) -> 
+-- On INPUTC reduce production option(comando_se2) -> 
+-- On IF reduce production option(comando_se2) -> 
+-- On ID reduce production option(comando_se2) -> 
+-- On FOR reduce production option(comando_se2) -> 
+-- On EOF reduce production option(comando_se2) -> 
+-- On DEF reduce production option(comando_se2) -> 
+-- On DEDENTA reduce production option(comando_se2) -> 
+
+State 146:
+comando_se2 -> ELIF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando_se2 -> ELIF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On RETURN reduce production comando_se2 -> ELIF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On PRINT reduce production comando_se2 -> ELIF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On INPUTS reduce production comando_se2 -> ELIF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On INPUTI reduce production comando_se2 -> ELIF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On INPUTF reduce production comando_se2 -> ELIF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On INPUTC reduce production comando_se2 -> ELIF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On IF reduce production comando_se2 -> ELIF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On ID reduce production comando_se2 -> ELIF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On FOR reduce production comando_se2 -> ELIF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On EOF reduce production comando_se2 -> ELIF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On DEF reduce production comando_se2 -> ELIF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On DEDENTA reduce production comando_se2 -> ELIF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+
+State 147:
+option(comando_se2) -> comando_se2 . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production option(comando_se2) -> comando_se2 
+-- On RETURN reduce production option(comando_se2) -> comando_se2 
+-- On PRINT reduce production option(comando_se2) -> comando_se2 
+-- On INPUTS reduce production option(comando_se2) -> comando_se2 
+-- On INPUTI reduce production option(comando_se2) -> comando_se2 
+-- On INPUTF reduce production option(comando_se2) -> comando_se2 
+-- On INPUTC reduce production option(comando_se2) -> comando_se2 
+-- On IF reduce production option(comando_se2) -> comando_se2 
+-- On ID reduce production option(comando_se2) -> comando_se2 
+-- On FOR reduce production option(comando_se2) -> comando_se2 
+-- On EOF reduce production option(comando_se2) -> comando_se2 
+-- On DEF reduce production option(comando_se2) -> comando_se2 
+-- On DEDENTA reduce production option(comando_se2) -> comando_se2 
+
+State 148:
+comando_se -> IF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando_se -> IF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On RETURN reduce production comando_se -> IF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On PRINT reduce production comando_se -> IF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On INPUTS reduce production comando_se -> IF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On INPUTI reduce production comando_se -> IF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On INPUTF reduce production comando_se -> IF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On INPUTC reduce production comando_se -> IF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On IF reduce production comando_se -> IF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On ID reduce production comando_se -> IF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On FOR reduce production comando_se -> IF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On EOF reduce production comando_se -> IF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On DEF reduce production comando_se -> IF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+-- On DEDENTA reduce production comando_se -> IF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_se2) 
+
+State 149:
+comando_while -> WHILE expressao DPTOS NOVALINHA INDENTA comandos . DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On DEDENTA shift to state 150
+
+State 150:
+comando_while -> WHILE expressao DPTOS NOVALINHA INDENTA comandos DEDENTA . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF DEDENTA ]
+-- On WHILE reduce production comando_while -> WHILE expressao DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On RETURN reduce production comando_while -> WHILE expressao DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On PRINT reduce production comando_while -> WHILE expressao DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On INPUTS reduce production comando_while -> WHILE expressao DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On INPUTI reduce production comando_while -> WHILE expressao DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On INPUTF reduce production comando_while -> WHILE expressao DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On INPUTC reduce production comando_while -> WHILE expressao DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On IF reduce production comando_while -> WHILE expressao DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On ID reduce production comando_while -> WHILE expressao DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On FOR reduce production comando_while -> WHILE expressao DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On EOF reduce production comando_while -> WHILE expressao DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On DEF reduce production comando_while -> WHILE expressao DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On DEDENTA reduce production comando_while -> WHILE expressao DPTOS NOVALINHA INDENTA comandos DEDENTA 
+
+State 151:
+funcao -> DEF . ID APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF ]
+-- On ID shift to state 152
+
+State 152:
+funcao -> DEF ID . APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF ]
+-- On APAR shift to state 153
+
+State 153:
+funcao -> DEF ID APAR . loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF ]
+-- On ID shift to state 154
+-- On separated_nonempty_list(VIRG,parametro) shift to state 163
+-- On parametro shift to state 164
+-- On loption(separated_nonempty_list(VIRG,parametro)) shift to state 167
+-- On FPAR reduce production loption(separated_nonempty_list(VIRG,parametro)) -> 
+
+State 154:
+parametro -> ID . DPTOS tipo [ VIRG FPAR ]
+-- On DPTOS shift to state 155
+
+State 155:
+parametro -> ID DPTOS . tipo [ VIRG FPAR ]
+-- On STRING shift to state 156
+-- On NONE shift to state 157
+-- On I32 shift to state 158
+-- On F32 shift to state 159
+-- On CHAR shift to state 160
+-- On BOOL shift to state 161
+-- On tipo shift to state 162
+
+State 156:
+tipo -> STRING . [ VIRG FPAR DPTOS ]
+-- On VIRG reduce production tipo -> STRING 
+-- On FPAR reduce production tipo -> STRING 
+-- On DPTOS reduce production tipo -> STRING 
+
+State 157:
+tipo -> NONE . [ VIRG FPAR DPTOS ]
+-- On VIRG reduce production tipo -> NONE 
+-- On FPAR reduce production tipo -> NONE 
+-- On DPTOS reduce production tipo -> NONE 
+
+State 158:
+tipo -> I32 . [ VIRG FPAR DPTOS ]
+-- On VIRG reduce production tipo -> I32 
+-- On FPAR reduce production tipo -> I32 
+-- On DPTOS reduce production tipo -> I32 
+
+State 159:
+tipo -> F32 . [ VIRG FPAR DPTOS ]
+-- On VIRG reduce production tipo -> F32 
+-- On FPAR reduce production tipo -> F32 
+-- On DPTOS reduce production tipo -> F32 
+
+State 160:
+tipo -> CHAR . [ VIRG FPAR DPTOS ]
+-- On VIRG reduce production tipo -> CHAR 
+-- On FPAR reduce production tipo -> CHAR 
+-- On DPTOS reduce production tipo -> CHAR 
+
+State 161:
+tipo -> BOOL . [ VIRG FPAR DPTOS ]
+-- On VIRG reduce production tipo -> BOOL 
+-- On FPAR reduce production tipo -> BOOL 
+-- On DPTOS reduce production tipo -> BOOL 
+
+State 162:
+parametro -> ID DPTOS tipo . [ VIRG FPAR ]
+-- On VIRG reduce production parametro -> ID DPTOS tipo 
+-- On FPAR reduce production parametro -> ID DPTOS tipo 
+
+State 163:
+loption(separated_nonempty_list(VIRG,parametro)) -> separated_nonempty_list(VIRG,parametro) . [ FPAR ]
+-- On FPAR reduce production loption(separated_nonempty_list(VIRG,parametro)) -> separated_nonempty_list(VIRG,parametro) 
+
+State 164:
+separated_nonempty_list(VIRG,parametro) -> parametro . [ FPAR ]
+separated_nonempty_list(VIRG,parametro) -> parametro . VIRG separated_nonempty_list(VIRG,parametro) [ FPAR ]
+-- On VIRG shift to state 165
+-- On FPAR reduce production separated_nonempty_list(VIRG,parametro) -> parametro 
+
+State 165:
+separated_nonempty_list(VIRG,parametro) -> parametro VIRG . separated_nonempty_list(VIRG,parametro) [ FPAR ]
+-- On ID shift to state 154
+-- On separated_nonempty_list(VIRG,parametro) shift to state 166
+-- On parametro shift to state 164
+
+State 166:
+separated_nonempty_list(VIRG,parametro) -> parametro VIRG separated_nonempty_list(VIRG,parametro) . [ FPAR ]
+-- On FPAR reduce production separated_nonempty_list(VIRG,parametro) -> parametro VIRG separated_nonempty_list(VIRG,parametro) 
+
+State 167:
+funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,parametro)) . FPAR SETA tipo DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF ]
+-- On FPAR shift to state 168
+
+State 168:
+funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR . SETA tipo DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF ]
+-- On SETA shift to state 169
+
+State 169:
+funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA . tipo DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF ]
+-- On STRING shift to state 156
+-- On NONE shift to state 157
+-- On I32 shift to state 158
+-- On F32 shift to state 159
+-- On CHAR shift to state 160
+-- On BOOL shift to state 161
+-- On tipo shift to state 170
+
+State 170:
+funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo . DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF ]
+-- On DPTOS shift to state 171
+
+State 171:
+funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS . NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF ]
+-- On NOVALINHA shift to state 172
+
+State 172:
+funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS NOVALINHA . INDENTA comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF ]
+-- On INDENTA shift to state 173
+
+State 173:
+funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS NOVALINHA INDENTA . comandos DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF ]
+-- On WHILE shift to state 1
+-- On RETURN shift to state 53
+-- On PRINT shift to state 57
+-- On INPUTS shift to state 60
+-- On INPUTI shift to state 63
+-- On INPUTF shift to state 66
+-- On INPUTC shift to state 69
+-- On IF shift to state 72
+-- On ID shift to state 77
+-- On FOR shift to state 96
+-- On nonempty_list(comando) shift to state 108
+-- On comandos shift to state 174
+-- On comando_while shift to state 111
+-- On comando_se shift to state 112
+-- On comando_retorno shift to state 113
+-- On comando_print shift to state 114
+-- On comando_inputs shift to state 115
+-- On comando_inputi shift to state 116
+-- On comando_inputf shift to state 117
+-- On comando_inputc shift to state 118
+-- On comando_for shift to state 119
+-- On comando_chamada shift to state 120
+-- On comando_atribuicao_sub shift to state 121
+-- On comando_atribuicao_mul shift to state 122
+-- On comando_atribuicao_mod shift to state 123
+-- On comando_atribuicao_mais shift to state 124
+-- On comando_atribuicao_div shift to state 125
+-- On comando_atribuicao shift to state 126
+-- On comando shift to state 127
+-- On chamada shift to state 129
+
+State 174:
+funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS NOVALINHA INDENTA comandos . DEDENTA [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF ]
+-- On DEDENTA shift to state 175
+
+State 175:
+funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS NOVALINHA INDENTA comandos DEDENTA . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF ]
+-- On WHILE reduce production funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On RETURN reduce production funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On PRINT reduce production funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On INPUTS reduce production funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On INPUTI reduce production funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On INPUTF reduce production funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On INPUTC reduce production funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On IF reduce production funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On ID reduce production funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On FOR reduce production funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On EOF reduce production funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS NOVALINHA INDENTA comandos DEDENTA 
+-- On DEF reduce production funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,parametro)) FPAR SETA tipo DPTOS NOVALINHA INDENTA comandos DEDENTA 
+
+State 176:
+programa' -> programa . [ # ]
+-- On # accept programa
+
+State 177:
+programa -> list(instrucao) . EOF [ # ]
+-- On EOF shift to state 178
+
+State 178:
+programa -> list(instrucao) EOF . [ # ]
+-- On # reduce production programa -> list(instrucao) EOF 
+
+State 179:
+list(instrucao) -> instrucao . list(instrucao) [ EOF ]
+-- On WHILE shift to state 1
+-- On RETURN shift to state 53
+-- On PRINT shift to state 57
+-- On INPUTS shift to state 60
+-- On INPUTI shift to state 63
+-- On INPUTF shift to state 66
+-- On INPUTC shift to state 69
+-- On IF shift to state 72
+-- On ID shift to state 77
+-- On FOR shift to state 96
+-- On DEF shift to state 151
+-- On list(instrucao) shift to state 180
+-- On instrucao shift to state 179
+-- On funcao shift to state 181
+-- On comando_while shift to state 111
+-- On comando_se shift to state 112
+-- On comando_retorno shift to state 113
+-- On comando_print shift to state 114
+-- On comando_inputs shift to state 115
+-- On comando_inputi shift to state 116
+-- On comando_inputf shift to state 117
+-- On comando_inputc shift to state 118
+-- On comando_for shift to state 119
+-- On comando_chamada shift to state 120
+-- On comando_atribuicao_sub shift to state 121
+-- On comando_atribuicao_mul shift to state 122
+-- On comando_atribuicao_mod shift to state 123
+-- On comando_atribuicao_mais shift to state 124
+-- On comando_atribuicao_div shift to state 125
+-- On comando_atribuicao shift to state 126
+-- On comando shift to state 182
+-- On chamada shift to state 129
+-- On EOF reduce production list(instrucao) -> 
+
+State 180:
+list(instrucao) -> instrucao list(instrucao) . [ EOF ]
+-- On EOF reduce production list(instrucao) -> instrucao list(instrucao) 
+
+State 181:
+instrucao -> funcao . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF ]
+-- On WHILE reduce production instrucao -> funcao 
+-- On RETURN reduce production instrucao -> funcao 
+-- On PRINT reduce production instrucao -> funcao 
+-- On INPUTS reduce production instrucao -> funcao 
+-- On INPUTI reduce production instrucao -> funcao 
+-- On INPUTF reduce production instrucao -> funcao 
+-- On INPUTC reduce production instrucao -> funcao 
+-- On IF reduce production instrucao -> funcao 
+-- On ID reduce production instrucao -> funcao 
+-- On FOR reduce production instrucao -> funcao 
+-- On EOF reduce production instrucao -> funcao 
+-- On DEF reduce production instrucao -> funcao 
+
+State 182:
+instrucao -> comando . [ WHILE RETURN PRINT INPUTS INPUTI INPUTF INPUTC IF ID FOR EOF DEF ]
+-- On WHILE reduce production instrucao -> comando 
+-- On RETURN reduce production instrucao -> comando 
+-- On PRINT reduce production instrucao -> comando 
+-- On INPUTS reduce production instrucao -> comando 
+-- On INPUTI reduce production instrucao -> comando 
+-- On INPUTF reduce production instrucao -> comando 
+-- On INPUTC reduce production instrucao -> comando 
+-- On IF reduce production instrucao -> comando 
+-- On ID reduce production instrucao -> comando 
+-- On FOR reduce production instrucao -> comando 
+-- On EOF reduce production instrucao -> comando 
+-- On DEF reduce production instrucao -> comando 
+

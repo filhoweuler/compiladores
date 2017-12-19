@@ -1,0 +1,1688 @@
+programa: DEF ID APAR FPAR SETA STRING DPTOS NOVALINHA INDENTA VIRG 
+##
+## Ends in an error in state: 163.
+##
+## funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,declaracoes)) FPAR SETA tipo DPTOS NOVALINHA INDENTA . comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF ]
+##
+## The known suffix of the stack is as follows:
+## DEF ID APAR loption(separated_nonempty_list(VIRG,declaracoes)) FPAR SETA tipo DPTOS NOVALINHA INDENTA 
+##
+
+Estado 163: Esperava algum comando apos indentacao
+
+programa: DEF ID APAR FPAR SETA STRING DPTOS NOVALINHA WHILE 
+##
+## Ends in an error in state: 162.
+##
+## funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,declaracoes)) FPAR SETA tipo DPTOS NOVALINHA . INDENTA comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF ]
+##
+## The known suffix of the stack is as follows:
+## DEF ID APAR loption(separated_nonempty_list(VIRG,declaracoes)) FPAR SETA tipo DPTOS NOVALINHA 
+##
+
+Estado 162: Esperava indentacao apos novalinha
+
+programa: DEF ID APAR FPAR SETA STRING DPTOS WHILE 
+##
+## Ends in an error in state: 161.
+##
+## funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,declaracoes)) FPAR SETA tipo DPTOS . NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF ]
+##
+## The known suffix of the stack is as follows:
+## DEF ID APAR loption(separated_nonempty_list(VIRG,declaracoes)) FPAR SETA tipo DPTOS 
+##
+
+Estado 161: Esperava nova linha apos ':'
+
+programa: DEF ID APAR FPAR SETA STRING WHILE 
+##
+## Ends in an error in state: 160.
+##
+## funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,declaracoes)) FPAR SETA tipo . DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF ]
+##
+## The known suffix of the stack is as follows:
+## DEF ID APAR loption(separated_nonempty_list(VIRG,declaracoes)) FPAR SETA tipo 
+##
+
+Estado 160: Esperava ':' apos tipo
+
+programa: DEF ID APAR FPAR SETA WHILE 
+##
+## Ends in an error in state: 159.
+##
+## funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,declaracoes)) FPAR SETA . tipo DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF ]
+##
+## The known suffix of the stack is as follows:
+## DEF ID APAR loption(separated_nonempty_list(VIRG,declaracoes)) FPAR SETA 
+##
+
+Estado 159: Esperava algum tipo apos '->'
+
+programa: DEF ID APAR FPAR WHILE 
+##
+## Ends in an error in state: 158.
+##
+## funcao -> DEF ID APAR loption(separated_nonempty_list(VIRG,declaracoes)) FPAR . SETA tipo DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF ]
+##
+## The known suffix of the stack is as follows:
+## DEF ID APAR loption(separated_nonempty_list(VIRG,declaracoes)) FPAR 
+##
+
+Estado 158: Esperava '->' apos ')'
+
+programa: DEF ID APAR ID DPTOS BOOL VIRG WHILE 
+##
+## Ends in an error in state: 167.
+##
+## separated_nonempty_list(VIRG,declaracoes) -> declaracoes VIRG . separated_nonempty_list(VIRG,declaracoes) [ FPAR ]
+##
+## The known suffix of the stack is as follows:
+## declaracoes VIRG 
+##
+
+Estado 167: Esperava lista separada por ',' apos ','
+
+programa: DEF ID APAR ID DPTOS BOOL WHILE 
+##
+## Ends in an error in state: 166.
+##
+## separated_nonempty_list(VIRG,declaracoes) -> declaracoes . [ FPAR ]
+## separated_nonempty_list(VIRG,declaracoes) -> declaracoes . VIRG separated_nonempty_list(VIRG,declaracoes) [ FPAR ]
+##
+## The known suffix of the stack is as follows:
+## declaracoes 
+##
+
+Estado 166: Esperava ',' ou '[' apos as declaracoes
+
+programa: DEF ID APAR ID DPTOS WHILE 
+##
+## Ends in an error in state: 150.
+##
+## declaracoes -> separated_nonempty_list(VIRG,ID) DPTOS . tipo [ VIRG FPAR ]
+##
+## The known suffix of the stack is as follows:
+## separated_nonempty_list(VIRG,ID) DPTOS 
+##
+
+EStado 150: Esperava algum tipo apos ':'
+
+programa: DEF ID APAR ID VIRG WHILE 
+##
+## Ends in an error in state: 146.
+##
+## separated_nonempty_list(VIRG,ID) -> ID VIRG . separated_nonempty_list(VIRG,ID) [ DPTOS ]
+##
+## The known suffix of the stack is as follows:
+## ID VIRG 
+##
+
+Estado 146: Esperava um lista separada por ',' apos ','
+
+programa: DEF ID APAR ID WHILE 
+##
+## Ends in an error in state: 145.
+##
+## separated_nonempty_list(VIRG,ID) -> ID . [ DPTOS ]
+## separated_nonempty_list(VIRG,ID) -> ID . VIRG separated_nonempty_list(VIRG,ID) [ DPTOS ]
+##
+## The known suffix of the stack is as follows:
+## ID 
+##
+
+Estado 145: Esperava '[' ou ',' apos ID
+
+programa: DEF ID APAR WHILE 
+##
+## Ends in an error in state: 144.
+##
+## funcao -> DEF ID APAR . loption(separated_nonempty_list(VIRG,declaracoes)) FPAR SETA tipo DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF ]
+##
+## The known suffix of the stack is as follows:
+## DEF ID APAR 
+##
+
+Estado 144: Esperava lista separada por virgula apos '('
+
+programa: DEF ID WHILE 
+##
+## Ends in an error in state: 143.
+##
+## funcao -> DEF ID . APAR loption(separated_nonempty_list(VIRG,declaracoes)) FPAR SETA tipo DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF ]
+##
+## The known suffix of the stack is as follows:
+## DEF ID 
+##
+
+Estado 143: Esperava '(' apos id
+ 
+programa: DEF WHILE 
+##
+## Ends in an error in state: 142.
+##
+## funcao -> DEF . ID APAR loption(separated_nonempty_list(VIRG,declaracoes)) FPAR SETA tipo DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF ]
+##
+## The known suffix of the stack is as follows:
+## DEF 
+##
+
+Estado 142: Esperava algum id apos 'def'
+
+programa: FOR ID IN RANGE APAR TRUE VIRG TRUE FPAR DPTOS NOVALINHA INDENTA VIRG 
+##
+## Ends in an error in state: 102.
+##
+## comando_for -> FOR ID IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA . comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## FOR ID IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA 
+##
+
+Estado 102: Esperava comandos apos indentacao
+
+programa: FOR ID IN RANGE APAR TRUE VIRG TRUE FPAR DPTOS NOVALINHA WHILE 
+##
+## Ends in an error in state: 101.
+##
+## comando_for -> FOR ID IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA . INDENTA comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## FOR ID IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA 
+##
+
+Estado 101: Esperava identacao apos nova linha
+
+programa: FOR ID IN RANGE APAR TRUE VIRG TRUE FPAR DPTOS WHILE 
+##
+## Ends in an error in state: 100.
+##
+## comando_for -> FOR ID IN RANGE APAR expressao VIRG expressao FPAR DPTOS . NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## FOR ID IN RANGE APAR expressao VIRG expressao FPAR DPTOS 
+##
+
+Estado 100: Esperava nova linha apos ':'
+
+programa: FOR ID IN RANGE APAR TRUE VIRG TRUE FPAR WHILE 
+##
+## Ends in an error in state: 99.
+##
+## comando_for -> FOR ID IN RANGE APAR expressao VIRG expressao FPAR . DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## FOR ID IN RANGE APAR expressao VIRG expressao FPAR 
+##
+
+Estado 99: Esperava ':' apos ')'
+
+programa: FOR ID IN RANGE APAR TRUE VIRG TRUE WHILE 
+##
+## Ends in an error in state: 98.
+##
+## comando_for -> FOR ID IN RANGE APAR expressao VIRG expressao . FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+## expressao -> expressao . POT expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MENOS expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MUL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . NAO expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## FOR ID IN RANGE APAR expressao VIRG expressao 
+##
+
+Estado 99: Esperava algum operador apos a expressao
+
+programa: FOR ID IN RANGE APAR TRUE VIRG WHILE 
+##
+## Ends in an error in state: 97.
+##
+## comando_for -> FOR ID IN RANGE APAR expressao VIRG . expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## FOR ID IN RANGE APAR expressao VIRG 
+##
+
+Estado 97: Esperava uma expressao apos ','
+
+programa: FOR ID IN RANGE APAR TRUE WHILE 
+##
+## Ends in an error in state: 96.
+##
+## comando_for -> FOR ID IN RANGE APAR expressao . VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+## expressao -> expressao . POT expressao [ VIRG POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ VIRG POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ VIRG POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ VIRG POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ VIRG POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENOS expressao [ VIRG POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MUL expressao [ VIRG POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ VIRG POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ VIRG POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . NAO expressao [ VIRG POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## FOR ID IN RANGE APAR expressao 
+##
+
+Estado 96: Esperava operador apos expressao
+
+programa: FOR ID IN RANGE APAR WHILE 
+##
+## Ends in an error in state: 95.
+##
+## comando_for -> FOR ID IN RANGE APAR . expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## FOR ID IN RANGE APAR 
+##
+
+Estado 95: Esperava uma expressao apos '('
+
+programa: FOR ID IN RANGE WHILE 
+##
+## Ends in an error in state: 94.
+##
+## comando_for -> FOR ID IN RANGE . APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## FOR ID IN RANGE 
+##
+
+Estado 94: Esperava '(' apos 'range'
+
+programa: FOR ID IN WHILE 
+##
+## Ends in an error in state: 93.
+##
+## comando_for -> FOR ID IN . RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## FOR ID IN 
+##
+
+Estado 93: Esperava 'range' apos 'in'
+
+programa: FOR ID WHILE 
+##
+## Ends in an error in state: 92.
+##
+## comando_for -> FOR ID . IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## FOR ID 
+##
+
+Estado 92: Esperava 'in' apos id
+
+programa: FOR WHILE 
+##
+## Ends in an error in state: 91.
+##
+## comando_for -> FOR . ID IN RANGE APAR expressao VIRG expressao FPAR DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## FOR 
+##
+
+Estado 91: Esperava id apos 'for'
+
+programa: ID APAR TRUE FPAR WHILE 
+##
+## Ends in an error in state: 87.
+##
+## comando_chama_func -> ID APAR argumentos FPAR . NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## ID APAR argumentos FPAR 
+##
+
+Estado 87: Esperava nova linha apos ')'
+
+programa: ID APAR TRUE VIRG WHILE 
+##
+## Ends in an error in state: 89.
+##
+## nonempty_list(argumento) -> argumento . [ FPAR ]
+## nonempty_list(argumento) -> argumento . nonempty_list(argumento) [ FPAR ]
+##
+## The known suffix of the stack is as follows:
+## argumento 
+##
+
+Estado 89: Esperava '[' ou lista de argumentos apos argumento
+
+programa: ID APAR TRUE WHILE 
+##
+## Ends in an error in state: 84.
+##
+## argumento -> expressao . [ TRUE LITSTRING LITINT LITFLOAT LITCHAR ID FPAR FALSE APAR ]
+## argumento -> expressao . VIRG [ TRUE LITSTRING LITINT LITFLOAT LITCHAR ID FPAR FALSE APAR ]
+## expressao -> expressao . POT expressao [ VIRG TRUE POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DIV DIFERENTE APAR ]
+## expressao -> expressao . MOD expressao [ VIRG TRUE POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DIV DIFERENTE APAR ]
+## expressao -> expressao . IGUAL expressao [ VIRG TRUE POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DIV DIFERENTE APAR ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG TRUE POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIOR expressao [ VIRG TRUE POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG TRUE POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIS expressao [ VIRG TRUE POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOS expressao [ VIRG TRUE POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DIV DIFERENTE APAR ]
+## expressao -> expressao . MUL expressao [ VIRG TRUE POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DIV DIFERENTE APAR ]
+## expressao -> expressao . DIV expressao [ VIRG TRUE POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOR expressao [ VIRG TRUE POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DIV DIFERENTE APAR ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG TRUE POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DIV DIFERENTE APAR ]
+## expressao -> expressao . NAO expressao [ VIRG TRUE POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao 
+##
+
+Estado 84: Esperava um operador apos expressao
+
+programa: ID APAR WHILE 
+##
+## Ends in an error in state: 82.
+##
+## comando_chama_func -> ID APAR . argumentos FPAR NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## ID APAR 
+##
+
+Estado 82: Esperava algum argumento apos '('
+
+programa: ID ATRIB INPUT APAR TRUE FPAR WHILE 
+##
+## Ends in an error in state: 78.
+##
+## comando_input -> ID ATRIB INPUT APAR expressao FPAR . NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## ID ATRIB INPUT APAR expressao FPAR 
+##
+
+Estado 78: Esperava nova linha apos ')'
+
+programa: ID ATRIB INPUT APAR TRUE WHILE 
+##
+## Ends in an error in state: 77.
+##
+## comando_input -> ID ATRIB INPUT APAR expressao . FPAR NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+## expressao -> expressao . POT expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MENOS expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MUL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . NAO expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## ID ATRIB INPUT APAR expressao 
+##
+
+Estado 77: Esperava algum operador apos expressao
+
+programa: ID ATRIB INPUT APAR WHILE 
+##
+## Ends in an error in state: 76.
+##
+## comando_input -> ID ATRIB INPUT APAR . expressao FPAR NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## ID ATRIB INPUT APAR 
+##
+
+Estado 76: Esperava uma expressao apos '('
+
+programa: ID ATRIB INPUT WHILE 
+##
+## Ends in an error in state: 75.
+##
+## comando_input -> ID ATRIB INPUT . APAR expressao FPAR NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## ID ATRIB INPUT 
+##
+
+Estado 75: Esperava '(' apos 'input'
+
+programa: ID ATRIB TRUE WHILE 
+##
+## Ends in an error in state: 80.
+##
+## comando_atribuicao -> ID ATRIB expressao . NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+## expressao -> expressao . POT expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENOS expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MUL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . NAO expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## ID ATRIB expressao 
+##
+
+Estado 80: Esperava operador apos expressao
+
+programa: ID ATRIB WHILE 
+##
+## Ends in an error in state: 74.
+##
+## comando_atribuicao -> ID ATRIB . expressao NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+## comando_input -> ID ATRIB . INPUT APAR expressao FPAR NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## ID ATRIB 
+##
+
+Estado 74: esperava expressao apos '='
+
+programa: ID DIVATRIB TRUE WHILE 
+##
+## Ends in an error in state: 72.
+##
+## comando_sub -> ID DIVATRIB expressao . NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+## expressao -> expressao . POT expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENOS expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MUL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . NAO expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## ID DIVATRIB expressao 
+##
+
+Estado 72: esperava operador apos expressao
+
+programa: ID DIVATRIB WHILE 
+##
+## Ends in an error in state: 71.
+##
+## comando_sub -> ID DIVATRIB . expressao NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## ID DIVATRIB 
+##
+
+Estado 71: Esperava expressao apos '/'
+
+programa: ID MODATRIB TRUE WHILE 
+##
+## Ends in an error in state: 69.
+##
+## comando_mod -> ID MODATRIB expressao . NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+## expressao -> expressao . POT expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENOS expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MUL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . NAO expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## ID MODATRIB expressao 
+##
+
+Estado 69: Esperava operador apos expressao
+
+programa: ID MODATRIB WHILE 
+##
+## Ends in an error in state: 68.
+##
+## comando_mod -> ID MODATRIB . expressao NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## ID MODATRIB 
+##
+
+Estado 69: Esperava alguma expressao apos 'mod'
+
+programa: ID MULATRIB TRUE WHILE 
+##
+## Ends in an error in state: 66.
+##
+## comando_mul -> ID MULATRIB expressao . NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+## expressao -> expressao . POT expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENOS expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MUL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . NAO expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## ID MULATRIB expressao 
+##
+
+Estado 66: Esperava operador apos expressao
+
+programa: ID MULATRIB WHILE 
+##
+## Ends in an error in state: 65.
+##
+## comando_mul -> ID MULATRIB . expressao NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## ID MULATRIB 
+##
+
+Estado 65: Esperava expressao apos '='
+
+programa: ID POTATRIB TRUE WHILE 
+##
+## Ends in an error in state: 63.
+##
+## comando_pot -> ID POTATRIB expressao . NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+## expressao -> expressao . POT expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENOS expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MUL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . NAO expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## ID POTATRIB expressao 
+##
+
+Estado 63: Esperava operador apos expressao 
+
+programa: ID POTATRIB WHILE 
+##
+## Ends in an error in state: 62.
+##
+## comando_pot -> ID POTATRIB . expressao NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## ID POTATRIB 
+##
+
+EStado 62: Esperava expressao apos '='
+
+programa: ID SOMAATRIB TRUE WHILE 
+##
+## Ends in an error in state: 60.
+##
+## comando_mais -> ID SOMAATRIB expressao . NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+## expressao -> expressao . POT expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENOS expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MUL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . NAO expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## ID SOMAATRIB expressao 
+##
+
+Estado 60: Esperava operador apos expressao
+
+programa: ID SOMAATRIB WHILE 
+##
+## Ends in an error in state: 59.
+##
+## comando_mais -> ID SOMAATRIB . expressao NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## ID SOMAATRIB 
+##
+
+Estado 59: ESperava expressao apos '+='
+
+programa: ID SUBATRIB TRUE WHILE 
+##
+## Ends in an error in state: 57.
+##
+## comando_div -> ID SUBATRIB expressao . NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+## expressao -> expressao . POT expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENOS expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MUL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . NAO expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## ID SUBATRIB expressao 
+##
+
+Estado 57: Esperava operador apos expressao
+
+programa: ID SUBATRIB WHILE 
+##
+## Ends in an error in state: 56.
+##
+## comando_div -> ID SUBATRIB . expressao NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## ID SUBATRIB 
+##
+
+Estado 56: Esperava expressao apos '-=' 
+
+programa: ID WHILE 
+##
+## Ends in an error in state: 55.
+##
+## comando_atribuicao -> ID . ATRIB expressao NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+## comando_chama_func -> ID . APAR argumentos FPAR NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+## comando_div -> ID . SUBATRIB expressao NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+## comando_input -> ID . ATRIB INPUT APAR expressao FPAR NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+## comando_mais -> ID . SOMAATRIB expressao NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+## comando_mod -> ID . MODATRIB expressao NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+## comando_mul -> ID . MULATRIB expressao NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+## comando_pot -> ID . POTATRIB expressao NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+## comando_sub -> ID . DIVATRIB expressao NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## ID 
+##
+
+Estado 55: Esperava alguma atribuicao apos id 
+
+programa: IF TRUE DPTOS NOVALINHA INDENTA RETURN FALSE NOVALINHA DEDENTA ELIF TRUE DPTOS NOVALINHA INDENTA RETURN FALSE NOVALINHA DEDENTA VIRG 
+##
+## Ends in an error in state: 136.
+##
+## comando_else_elif -> ELIF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA . option(comando_else_elif) [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## ELIF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA 
+##
+
+Estado 136: Esperava 'else ou elif' apos dedenta
+
+programa: IF TRUE DPTOS NOVALINHA INDENTA RETURN FALSE NOVALINHA DEDENTA ELIF TRUE DPTOS NOVALINHA INDENTA VIRG 
+##
+## Ends in an error in state: 134.
+##
+## comando_else_elif -> ELIF expressao DPTOS NOVALINHA INDENTA . comandos DEDENTA option(comando_else_elif) [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## ELIF expressao DPTOS NOVALINHA INDENTA 
+##
+
+Estado 134: Esperava algum comando apos identa
+
+programa: IF TRUE DPTOS NOVALINHA INDENTA RETURN FALSE NOVALINHA DEDENTA ELIF TRUE DPTOS NOVALINHA WHILE 
+##
+## Ends in an error in state: 133.
+##
+## comando_else_elif -> ELIF expressao DPTOS NOVALINHA . INDENTA comandos DEDENTA option(comando_else_elif) [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## ELIF expressao DPTOS NOVALINHA 
+##
+
+Estado 133: Esperava indentacao apos nova linha
+
+programa: IF TRUE DPTOS NOVALINHA INDENTA RETURN FALSE NOVALINHA DEDENTA ELIF TRUE DPTOS WHILE 
+##
+## Ends in an error in state: 132.
+##
+## comando_else_elif -> ELIF expressao DPTOS . NOVALINHA INDENTA comandos DEDENTA option(comando_else_elif) [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## ELIF expressao DPTOS 
+##
+
+EStado 132: Esperava nova linha apos ':'
+
+programa: IF TRUE DPTOS NOVALINHA INDENTA RETURN FALSE NOVALINHA DEDENTA ELIF TRUE WHILE 
+##
+## Ends in an error in state: 131.
+##
+## comando_else_elif -> ELIF expressao . DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_else_elif) [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+## expressao -> expressao . POT expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENOS expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MUL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . NAO expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## ELIF expressao 
+##
+
+Estado 131: Esperava operador apos expressao
+
+programa: IF TRUE DPTOS NOVALINHA INDENTA RETURN FALSE NOVALINHA DEDENTA ELIF WHILE 
+##
+## Ends in an error in state: 130.
+##
+## comando_else_elif -> ELIF . expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_else_elif) [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## ELIF 
+##
+
+Estado 130: Esperava expressao apos elif
+
+programa: IF TRUE DPTOS NOVALINHA INDENTA RETURN FALSE NOVALINHA DEDENTA ELSE DPTOS NOVALINHA INDENTA VIRG 
+##
+## Ends in an error in state: 127.
+##
+## comando_else_elif -> ELSE DPTOS NOVALINHA INDENTA . comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## ELSE DPTOS NOVALINHA INDENTA 
+##
+
+EStado 127: Esperava algum comando apos identa
+
+programa: IF TRUE DPTOS NOVALINHA INDENTA RETURN FALSE NOVALINHA DEDENTA ELSE DPTOS NOVALINHA WHILE 
+##
+## Ends in an error in state: 126.
+##
+## comando_else_elif -> ELSE DPTOS NOVALINHA . INDENTA comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## ELSE DPTOS NOVALINHA 
+##
+
+Estado 126: Esperava indentacao apos nova linha
+
+programa: IF TRUE DPTOS NOVALINHA INDENTA RETURN FALSE NOVALINHA DEDENTA ELSE DPTOS WHILE 
+##
+## Ends in an error in state: 125.
+##
+## comando_else_elif -> ELSE DPTOS . NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## ELSE DPTOS 
+##
+
+Estado 125: Esperava nova linha apos ':'
+
+programa: IF TRUE DPTOS NOVALINHA INDENTA RETURN FALSE NOVALINHA DEDENTA ELSE WHILE 
+##
+## Ends in an error in state: 124.
+##
+## comando_else_elif -> ELSE . DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## ELSE 
+##
+
+Estado 124: ESperava ':' apos else
+
+programa: IF TRUE DPTOS NOVALINHA INDENTA RETURN FALSE NOVALINHA DEDENTA VIRG 
+##
+## Ends in an error in state: 123.
+##
+## comando_if -> IF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA . option(comando_else_elif) [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## IF expressao DPTOS NOVALINHA INDENTA comandos DEDENTA 
+##
+
+Estado 123: Esperava else ou elif apos dedentacao
+
+programa: IF TRUE DPTOS NOVALINHA INDENTA VIRG 
+##
+## Ends in an error in state: 54.
+##
+## comando_if -> IF expressao DPTOS NOVALINHA INDENTA . comandos DEDENTA option(comando_else_elif) [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## IF expressao DPTOS NOVALINHA INDENTA 
+##
+
+Estado 54: Esperava comandos apos identacao
+
+programa: IF TRUE DPTOS NOVALINHA WHILE 
+##
+## Ends in an error in state: 53.
+##
+## comando_if -> IF expressao DPTOS NOVALINHA . INDENTA comandos DEDENTA option(comando_else_elif) [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## IF expressao DPTOS NOVALINHA 
+##
+
+Estado 53: Esperava identacao apos nova linha
+
+programa: IF TRUE DPTOS WHILE 
+##
+## Ends in an error in state: 52.
+##
+## comando_if -> IF expressao DPTOS . NOVALINHA INDENTA comandos DEDENTA option(comando_else_elif) [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## IF expressao DPTOS 
+##
+
+Estado 52: Esperava nova linha apos ':'
+
+programa: IF TRUE WHILE 
+##
+## Ends in an error in state: 51.
+##
+## comando_if -> IF expressao . DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_else_elif) [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+## expressao -> expressao . POT expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENOS expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MUL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . NAO expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## IF expressao 
+##
+
+Estado 51: Esperava operador apos expressao
+
+programa: IF WHILE 
+##
+## Ends in an error in state: 50.
+##
+## comando_if -> IF . expressao DPTOS NOVALINHA INDENTA comandos DEDENTA option(comando_else_elif) [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## IF 
+##
+
+Estado 50: Esperava expressao apos if
+
+programa: PRINT APAR TRUE FPAR WHILE 
+##
+## Ends in an error in state: 48.
+##
+## comando_print -> PRINT APAR expressao FPAR . NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## PRINT APAR expressao FPAR 
+##
+
+Estado 48: Esperava nova linha apos ')'
+
+programa: PRINT APAR TRUE WHILE 
+##
+## Ends in an error in state: 47.
+##
+## comando_print -> PRINT APAR expressao . FPAR NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+## expressao -> expressao . POT expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MENOS expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MUL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . NAO expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## PRINT APAR expressao 
+##
+
+Estado 47: Esperava operador apos expressao
+
+programa: PRINT APAR WHILE 
+##
+## Ends in an error in state: 46.
+##
+## comando_print -> PRINT APAR . expressao FPAR NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## PRINT APAR 
+##
+
+Estado 46: Esperava expressao apos '('
+
+programa: PRINT WHILE 
+##
+## Ends in an error in state: 45.
+##
+## comando_print -> PRINT . APAR expressao FPAR NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## PRINT 
+##
+
+Estado 45: Esperava '(' apos 'print'
+
+programa: RETURN TRUE NOVALINHA VIRG 
+##
+## Ends in an error in state: 172.
+##
+## list(instrucao) -> instrucao . list(instrucao) [ EOF ]
+##
+## The known suffix of the stack is as follows:
+## instrucao 
+##
+
+Estado 17: Esperava uma lista de instrucoes 
+
+programa: RETURN TRUE WHILE 
+##
+## Ends in an error in state: 43.
+##
+## comando_return -> RETURN expressao . NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+## expressao -> expressao . POT expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENOS expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MUL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+## expressao -> expressao . NAO expressao [ POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## RETURN expressao 
+##
+
+Estado 43: Esperava um operador apos expressao
+
+programa: RETURN WHILE 
+##
+## Ends in an error in state: 42.
+##
+## comando_return -> RETURN . expressao NOVALINHA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## RETURN 
+##
+
+Estado 42: Esperava uma expressao apos 'return'
+
+programa: VIRG 
+##
+## Ends in an error in state: 0.
+##
+## programa' -> . programa [ # ]
+##
+## The known suffix of the stack is as follows:
+## 
+##
+
+Estado 0: Esperava um programa.
+
+programa: WHILE APAR TRUE WHILE 
+##
+## Ends in an error in state: 10.
+##
+## expressao -> expressao . POT expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MENOS expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MUL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> expressao . NAO expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL FPAR DIV DIFERENTE ]
+## expressao -> APAR expressao . FPAR [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## APAR expressao 
+##
+
+Estado 10: Esperava um operador ou ')' apos expressao
+
+programa: WHILE APAR WHILE 
+##
+## Ends in an error in state: 9.
+##
+## expressao -> APAR . expressao FPAR [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## APAR 
+##
+
+Estado 9> Esperava expressao apos '('
+
+programa: WHILE TRUE DIFERENTE TRUE WHILE 
+##
+## Ends in an error in state: 36.
+##
+## expressao -> expressao . POT expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MOD expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . IGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao DIFERENTE expressao . [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIOR expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIS expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOS expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MUL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . DIV expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOR expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . NAO expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao DIFERENTE expressao 
+##
+
+Estado 36: Esperava operador apos expressao
+
+programa: WHILE TRUE DIFERENTE WHILE 
+##
+## Ends in an error in state: 35.
+##
+## expressao -> expressao DIFERENTE . expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao DIFERENTE 
+##
+
+Estado 35: Esperava expressao apos '!='
+
+programa: WHILE TRUE DIV TRUE WHILE 
+##
+## Ends in an error in state: 22.
+##
+## expressao -> expressao . POT expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MOD expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . IGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIOR expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIS expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOS expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MUL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . DIV expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao DIV expressao . [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOR expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . NAO expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao DIV expressao 
+##
+
+Estado 22: Esperava operador apos expressao
+
+programa: WHILE TRUE DIV WHILE 
+##
+## Ends in an error in state: 21.
+##
+## expressao -> expressao DIV . expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao DIV 
+##
+
+Estado 21: Esperava expressao apos '/'
+
+programa: WHILE TRUE DPTOS NOVALINHA INDENTA RETURN TRUE NOVALINHA VIRG 
+##
+## Ends in an error in state: 120.
+##
+## nonempty_list(comando) -> comando . [ DEDENTA ]
+## nonempty_list(comando) -> comando . nonempty_list(comando) [ DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## comando 
+##
+
+Estado 120: Esperava '[' ou lista de comandos separados por virgula apos comando
+
+programa: WHILE TRUE DPTOS NOVALINHA INDENTA VIRG 
+##
+## Ends in an error in state: 41.
+##
+## comando_while -> WHILE expressao DPTOS NOVALINHA INDENTA . comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## WHILE expressao DPTOS NOVALINHA INDENTA 
+##
+
+Estado 41: Esperava comandos apos identacao
+
+programa: WHILE TRUE DPTOS NOVALINHA WHILE 
+##
+## Ends in an error in state: 40.
+##
+## comando_while -> WHILE expressao DPTOS NOVALINHA . INDENTA comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## WHILE expressao DPTOS NOVALINHA 
+##
+
+Estado 40: ESperava identacao apos nova linha 
+
+programa: WHILE TRUE DPTOS WHILE 
+##
+## Ends in an error in state: 39.
+##
+## comando_while -> WHILE expressao DPTOS . NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## WHILE expressao DPTOS 
+##
+
+Estado 39: Esperava nova linha apos ':'
+
+programa: WHILE TRUE IGUAL TRUE WHILE 
+##
+## Ends in an error in state: 34.
+##
+## expressao -> expressao . POT expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MOD expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . IGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao IGUAL expressao . [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIOR expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIS expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOS expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MUL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . DIV expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOR expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . NAO expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao IGUAL expressao 
+##
+
+Estado 34: Esperava operador apos expressao
+
+programa: WHILE TRUE IGUAL WHILE 
+##
+## Ends in an error in state: 33.
+##
+## expressao -> expressao IGUAL . expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao IGUAL 
+##
+
+Estado 33: Esperava expressao apos '='
+
+programa: WHILE TRUE MAIOR TRUE WHILE 
+##
+## Ends in an error in state: 32.
+##
+## expressao -> expressao . POT expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MOD expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . IGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIOR expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao MAIOR expressao . [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIS expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOS expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MUL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . DIV expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOR expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . NAO expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao MAIOR expressao 
+##
+
+Estado 32: Esperava operador apos expressao
+
+programa: WHILE TRUE MAIOR WHILE 
+##
+## Ends in an error in state: 31.
+##
+## expressao -> expressao MAIOR . expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao MAIOR 
+##
+
+Estado 31: Esperava expressao apos '>'
+
+programa: WHILE TRUE MAIORIGUAL TRUE WHILE 
+##
+## Ends in an error in state: 30.
+##
+## expressao -> expressao . POT expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MOD expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . IGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIOR expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao MAIORIGUAL expressao . [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIS expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOS expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MUL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . DIV expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOR expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . NAO expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao MAIORIGUAL expressao 
+##
+
+Estado 30: Esperava operador apos expressao
+
+programa: WHILE TRUE MAIORIGUAL WHILE 
+##
+## Ends in an error in state: 29.
+##
+## expressao -> expressao MAIORIGUAL . expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao MAIORIGUAL 
+##
+
+Estado 29: Esperava expressao apos '>='
+
+programa: WHILE TRUE MAIS TRUE WHILE 
+##
+## Ends in an error in state: 26.
+##
+## expressao -> expressao . POT expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MOD expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . IGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIOR expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIS expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao MAIS expressao . [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOS expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MUL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . DIV expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOR expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . NAO expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao MAIS expressao 
+##
+
+Estado 26: Esperava operador apos expressao
+
+programa: WHILE TRUE MAIS WHILE 
+##
+## Ends in an error in state: 25.
+##
+## expressao -> expressao MAIS . expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao MAIS 
+##
+
+Estado 25: Esperava expressao apos '+'
+
+programa: WHILE TRUE MENOR TRUE WHILE 
+##
+## Ends in an error in state: 28.
+##
+## expressao -> expressao . POT expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MOD expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . IGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIOR expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIS expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOS expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MUL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . DIV expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOR expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao MENOR expressao . [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . NAO expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao MENOR expressao 
+##
+
+Estado 28: Esperava operador apos expressao
+
+programa: WHILE TRUE MENOR WHILE 
+##
+## Ends in an error in state: 27.
+##
+## expressao -> expressao MENOR . expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao MENOR 
+##
+
+Estado 27: Esperava expressao apos '<'
+
+programa: WHILE TRUE MENORIGUAL TRUE WHILE 
+##
+## Ends in an error in state: 24.
+##
+## expressao -> expressao . POT expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MOD expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . IGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIOR expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIS expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOS expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MUL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . DIV expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOR expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao MENORIGUAL expressao . [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . NAO expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao MENORIGUAL expressao 
+##
+
+Estado 24: Esperava operador apos expressao
+
+programa: WHILE TRUE MENORIGUAL WHILE 
+##
+## Ends in an error in state: 23.
+##
+## expressao -> expressao MENORIGUAL . expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao MENORIGUAL 
+##
+
+Estado 23: Esperava expressao apos '<='
+
+programa: WHILE TRUE MENOS TRUE WHILE 
+##
+## Ends in an error in state: 20.
+##
+## expressao -> expressao . POT expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MOD expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . IGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIOR expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIS expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOS expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao MENOS expressao . [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MUL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . DIV expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOR expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . NAO expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao MENOS expressao 
+##
+
+Estado 20: Esperava operador apos expressao
+
+programa: WHILE TRUE MENOS WHILE 
+##
+## Ends in an error in state: 19.
+##
+## expressao -> expressao MENOS . expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao MENOS 
+##
+
+Estado 19: Esperava expressao apos '-'
+
+programa: WHILE TRUE MOD TRUE WHILE 
+##
+## Ends in an error in state: 18.
+##
+## expressao -> expressao . POT expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MOD expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao MOD expressao . [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . IGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIOR expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIS expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOS expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MUL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . DIV expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOR expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . NAO expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao MOD expressao 
+##
+
+Estado 18: Esperava operador apos expressao
+
+programa: WHILE TRUE MOD WHILE 
+##
+## Ends in an error in state: 17.
+##
+## expressao -> expressao MOD . expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao MOD 
+##
+
+Estado 17: Esperava expressao apos 'mod' 
+
+programa: WHILE TRUE MUL TRUE WHILE 
+##
+## Ends in an error in state: 16.
+##
+## expressao -> expressao . POT expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MOD expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . IGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIOR expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIS expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOS expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MUL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao MUL expressao . [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . DIV expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOR expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . NAO expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao MUL expressao 
+##
+
+Estado 16: Esperava operador apos expressao
+
+programa: WHILE TRUE MUL WHILE 
+##
+## Ends in an error in state: 15.
+##
+## expressao -> expressao MUL . expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao MUL 
+##
+
+Estado 15: Esperava expressao apos '*'
+
+programa: WHILE TRUE NAO TRUE WHILE 
+##
+## Ends in an error in state: 14.
+##
+## expressao -> expressao . POT expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MOD expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . IGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIOR expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIS expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOS expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MUL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . DIV expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOR expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . NAO expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao NAO expressao . [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao NAO expressao 
+##
+
+Estado 14: Esperava operador apos expressao
+
+programa: WHILE TRUE NAO WHILE 
+##
+## Ends in an error in state: 13.
+##
+## expressao -> expressao NAO . expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao NAO 
+##
+
+Estado 13: Esperava expressao apos 'not'
+
+programa: WHILE TRUE POT TRUE WHILE 
+##
+## Ends in an error in state: 12.
+##
+## expressao -> expressao . POT expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao POT expressao . [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MOD expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . IGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . DIFERENTE expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIOR expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIORIGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MAIS expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOS expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MUL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . DIV expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENOR expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . MENORIGUAL expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+## expressao -> expressao . NAO expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao POT expressao 
+##
+
+Estado 12: Esperava operador apos expressao
+
+programa: WHILE TRUE POT WHILE 
+##
+## Ends in an error in state: 11.
+##
+## expressao -> expressao POT . expressao [ VIRG TRUE POT NOVALINHA NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR LITSTRING LITINT LITFLOAT LITCHAR IGUAL ID FPAR FALSE DPTOS DIV DIFERENTE APAR ]
+##
+## The known suffix of the stack is as follows:
+## expressao POT 
+##
+
+Estado 11: Esperava expressao apos pot
+
+programa: WHILE TRUE WHILE 
+##
+## Ends in an error in state: 38.
+##
+## comando_while -> WHILE expressao . DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+## expressao -> expressao . POT expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MOD expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . IGUAL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIFERENTE expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIOR expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIORIGUAL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MAIS expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENOS expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MUL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . DIV expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENOR expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . MENORIGUAL expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+## expressao -> expressao . NAO expressao [ POT NAO MUL MOD MENOS MENORIGUAL MENOR MAIS MAIORIGUAL MAIOR IGUAL DPTOS DIV DIFERENTE ]
+##
+## The known suffix of the stack is as follows:
+## WHILE expressao 
+##
+
+Estado 38: Esperava operador apos expressao
+
+programa: WHILE WHILE 
+##
+## Ends in an error in state: 1.
+##
+## comando_while -> WHILE . expressao DPTOS NOVALINHA INDENTA comandos DEDENTA [ WHILE RETURN PRINT IF ID FOR EOF DEF DEDENTA ]
+##
+## The known suffix of the stack is as follows:
+## WHILE 
+##
+
+EStado 1: Esperava expressao apos while
+
